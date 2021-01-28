@@ -18,9 +18,10 @@ public class CursorController : MonoBehaviour
     public CursorState currentState;
 
     private Texture2D[] cursorTypes;
-    private Vector3 mousePos;
-    private Vector3 prevMousePos;
-    private int stateCount;
+    public Vector3 mousePos = Vector3.zero;
+    public Vector3 prevMousePos = Vector3.zero;
+    private bool firstFrame = true;
+    private int stateCount = 0;
 
     public enum CursorState
     {
@@ -39,7 +40,6 @@ public class CursorController : MonoBehaviour
         cursorTypes = cursorTypesInit;
         currentState = CursorState.None;
         ChangeCursor(cursorTypes[(int)currentState]);
-        stateCount = 0;
     }
 
     // Update is called once per frame
@@ -47,7 +47,6 @@ public class CursorController : MonoBehaviour
     {
         mousePos = Input.mousePosition;
         Vector3 mouseMotion = prevMousePos - mousePos;
-
         if (stateCount < stateChangeDelay && (currentState == CursorState.Up || currentState == CursorState.Down || currentState == CursorState.Left || currentState == CursorState.Right))
         {
             stateCount++;
@@ -95,6 +94,13 @@ public class CursorController : MonoBehaviour
         {
             ChangeCursor(cursor);
         }
+
+        if (firstFrame)
+        {
+            ChangeCursor(cursor);
+            firstFrame = false;
+        }
+
         prevMousePos = mousePos;
     }
 
