@@ -4,12 +4,13 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Solid_Contour_outside
   m_Shader: {fileID: 4800000, guid: 62505ee61d20098489c6f861ed25cce1, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _FRAMEMODE_GENERAL _OUTLINEENABLED_ON _OUTLINEMODE_SOLID
-    _OUTLINEPOSITION_OUTSIDE _OUTLINESHAPE_CONTOUR _TILEMODE_STRETCH
+    _OUTLINEPOSITION_OUTSIDE _OUTLINESHAPE_CONTOUR _TILEMODE_TILE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -62,7 +63,7 @@ Material:
     m_Floats:
     - _AlphaCount: 3
     - _AlphaThreshold: 0
-    - _Angle: 45
+    - _Angle: 9.22
     - _BumpScale: 1
     - _ConnectedAlpha: 0
     - _Cutoff: 0.5
@@ -84,8 +85,8 @@ Material:
     - _SpecularHighlights: 1
     - _SpriteOverlay: 0
     - _SrcBlend: 1
-    - _Thickness: 100
-    - _TileMode: 0
+    - _Thickness: 5
+    - _TileMode: 1
     - _UVSec: 0
     - _Weight: 0.5
     - _ZWrite: 1
