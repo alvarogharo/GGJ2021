@@ -1,0 +1,35 @@
+{
+    "Items":[
+        {
+            "dialogues":[
+                {
+                    "sentences":[
+                        {
+                            "text":"Hola soy una prueba de texto uwu",
+                            "transmitter":0,
+                            "delayForNext":1.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"la pizza con piña por favor",
+                            "transmitter":1,
+                            "delayForNext":2.0
+                            ,"eventAfterText":""
+                        },
+                        {
+                            "text":"esto es para tener un mensaje un poco mas largo mientras veo la isla de las tentaciones",
+                            "transmitter":0,
+                            "delayForNext":3.0,
+                            "eventAfterText":""
+                        },{
+                            "text":"mensaje de la misma persona para no sed que la verdad",
+                            "transmitter":0,
+                            "delayForNext":4.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
