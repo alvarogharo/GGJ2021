@@ -6,6 +6,8 @@ TagManager:
   tags:
   - InteractableObj
   - Floor
+  - CielingLight
+  - CeilingLight
   layers:
   - Default
   - TransparentFX
