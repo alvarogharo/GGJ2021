@@ -22,6 +22,7 @@ public class CursorController : MonoBehaviour
     public Vector3 prevMousePos = Vector3.zero;
     private bool firstFrame = true;
     private int stateCount = 0;
+    private AudioSource audioSrc;
 
     public enum CursorState
     {
@@ -41,6 +42,7 @@ public class CursorController : MonoBehaviour
         currentState = CursorState.None;
         ChangeCursor(cursorTypes[(int)currentState]);
         DontDestroyOnLoad(this.gameObject);
+        audioSrc = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -86,6 +88,10 @@ public class CursorController : MonoBehaviour
                     }
                 }
             }
+        }
+        if (Input.GetMouseButtonDown(0) && !audioSrc.isPlaying)
+        {
+            audioSrc.Play(0);
         }
         if (Input.GetMouseButton(0))
         {

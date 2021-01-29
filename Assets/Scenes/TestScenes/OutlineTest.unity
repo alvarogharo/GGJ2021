@@ -966,6 +966,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 8534072891847436079, guid: 86fdb7dd3dff7f140945b31b165ab77c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 42a378fb03e4179468afdbaae81bda92, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86fdb7dd3dff7f140945b31b165ab77c, type: 3}
 --- !u!1 &1857839755

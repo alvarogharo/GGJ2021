@@ -6,7 +6,7 @@ public class IntratableFasesController : MonoBehaviour
 {
     public string[] interactableObjets;
     public int currentFase = 0;
-    private List<OutlineController> currentFaseControllers;
+    private List<InteractableObjectController> currentFaseControllers;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -20,21 +20,21 @@ public class IntratableFasesController : MonoBehaviour
         SwitchInteractibleFromControllers(currentFaseControllers, true);
     }
 
-    private List<OutlineController> GetOutlineControllersByFase(int fase)
+    private List<InteractableObjectController> GetOutlineControllersByFase(int fase)
     {
         string faseNames = interactableObjets[fase];
         string[] faseNamesSplit = faseNames.Split(',');
-        List<OutlineController> outControllers = new List<OutlineController>();
+        List<InteractableObjectController> outControllers = new List<InteractableObjectController>();
         foreach(string name in faseNamesSplit)
         {
-            outControllers.Add(GameObject.Find(name).GetComponent<OutlineController>());
+            outControllers.Add(GameObject.Find(name).GetComponent<InteractableObjectController>());
         }
         return outControllers;
     }
 
-    private void SwitchInteractibleFromControllers(List<OutlineController> outControllers, bool newState)
+    private void SwitchInteractibleFromControllers(List<InteractableObjectController> outControllers, bool newState)
     {
-        foreach (OutlineController controller in outControllers)
+        foreach (InteractableObjectController controller in outControllers)
         {
             controller.isInteractable = newState;
         }
