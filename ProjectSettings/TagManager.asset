@@ -43,3 +43,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Pared
+    uniqueID: 3614734541
+    locked: 0
+  - name: Objetos
+    uniqueID: 892461869
+    locked: 0
+  - name: Objetos Historia
+    uniqueID: 445029989
+    locked: 0
+  - name: Personajes
+    uniqueID: 3890072957
+    locked: 0
