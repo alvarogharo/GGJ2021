@@ -50,8 +50,11 @@ public class CameraShakeController : MonoBehaviour
 
     private void SetCameraController(bool isShaking)
     {
-        cameraShaker.enabled = isShaking;
-        cameraMovement.enabled = !isShaking;
+        if (cameraMovement && cameraShaker)
+        {
+            cameraShaker.enabled = isShaking;
+            cameraMovement.enabled = !isShaking;
+        }
     }
 
     IEnumerator StopLightSwingAndCameraController(float seconds)
