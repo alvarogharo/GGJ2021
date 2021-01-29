@@ -40,6 +40,7 @@ public class CursorController : MonoBehaviour
         cursorTypes = cursorTypesInit;
         currentState = CursorState.None;
         ChangeCursor(cursorTypes[(int)currentState]);
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
