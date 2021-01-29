@@ -1,35 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class OutlineController : MonoBehaviour
 {
     public bool isInteractable;
     public bool hasOutline;
-    public Material defaultMaterial;
-    public Material outlineMaterial;
-    private SpriteRenderer sprRenderer;
+    private Light2D outlineLight;
     // Start is called before the first frame update
     void Awake()
     {
-        sprRenderer = gameObject.GetComponent<SpriteRenderer>();
+        outlineLight = gameObject.GetComponentInChildren<Light2D>();
     }
 
     private void Update()
     {
         if (isInteractable)
         {
-            if (!hasOutline)
-            {
-                sprRenderer.material = defaultMaterial;
-            }
-            else
-            {
-                sprRenderer.material = outlineMaterial;
-            }
-        } else
-        {
-            sprRenderer.material = defaultMaterial;
+            outlineLight.enabled = hasOutline;
         }
     }
 
