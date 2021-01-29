@@ -19,14 +19,23 @@ public class DialogueManager : MonoBehaviour
 
     //Control bools
     private bool typing;
+    private bool waiting;
+    private bool controlEnabled;
+
+    //References
+    private CharacterMovement superMovement;
 
     
-
+    private void Awake(){
+        superMovement = FindObjectOfType<CharacterMovement>();
+    }
     private void Start(){
         typing = false;
+        waiting = false;
+        controlEnabled = false;
         phasesList = GetPhases();
         //Debug.Log(phasesList.Count);
-        StartDialogue(0, 0);
+        //StartDialogue(0, 0);
         /*var phList = new List<Phase>();
         var dialogueList = new List<Dialogue>();
         var sentenceList = new List<Sentence>();
@@ -41,7 +50,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void Update(){
-        if(Input.GetMouseButtonDown(0)){
+        if(Input.GetMouseButtonDown(0) && !waiting && controlEnabled){
             if (typing){
                 StopAllCoroutines();
                 typing = false;
@@ -56,6 +65,10 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
+    private void EnableControl(){controlEnabled = true;}
+    private void DisableControl(){controlEnabled = false;}
+    
 
 #region ReadJSON
     public static List<Phase> GetPhases(){
@@ -82,6 +95,9 @@ public class DialogueManager : MonoBehaviour
 #region Typing
 
     public void StartDialogue(int phase, int dialogue){
+        //Desactivamos el control de movimiento del personaje
+        superMovement.DisableControl(true);
+        EnableControl();
         currentDialogue = phasesList[phase].dialogues[dialogue];
         currentSentenceIndex = -1;
 
@@ -102,11 +118,16 @@ public class DialogueManager : MonoBehaviour
             }
         }else{
             //Fin de dialogo
+            DisableControl();
         }
     }
 
     private IEnumerator TypeSuperDialogue(){
         typing = true;
+        waiting = true;
+        yield return new WaitForSeconds(currentDialogue.sentences[currentSentenceIndex].delayBefore);
+        waiting = false;
+
         foreach(char letter in currentDialogue.sentences[currentSentenceIndex].text.ToCharArray())
         {
             superDialogueText.text += letter;
@@ -116,6 +137,10 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator TypeHandDialogue(){
         typing = true;
+        waiting = true;
+        yield return new WaitForSeconds(currentDialogue.sentences[currentSentenceIndex].delayBefore);
+        waiting = false;
+
         foreach(char letter in currentDialogue.sentences[currentSentenceIndex].text.ToCharArray())
         {
             handDialogueText.text += letter;
@@ -131,13 +156,13 @@ public class DialogueManager : MonoBehaviour
 public class Sentence{
     public string text;
     public int transmitter; //0 para super, 1 para hand
-    public float delayForNext;
+    public float delayBefore;
     public string eventAfterText;
 
     public Sentence(string txt, int t, float d, string e){
         this.text = txt;
         this.transmitter = t;
-        this.delayForNext = d;
+        this.delayBefore = d;
         this.eventAfterText = e;
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestingMovement : MonoBehaviour
+public class CharacterMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed = 0.1f;
@@ -31,6 +31,7 @@ public class TestingMovement : MonoBehaviour
                 moving = false;
             }else if(Input.GetMouseButtonDown(0)){   
                 Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); 
+                worldPosition.z = -7;
                 Instantiate(pointTrailPrefab, worldPosition, Quaternion.identity);        
                 /*Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 pointToGo = new Vector3(worldPosition.x, 0, 0);
@@ -50,7 +51,7 @@ public class TestingMovement : MonoBehaviour
     }
 
     public void EnableControl(){controlEnabled = true;}
-    public void DisableControl(bool stopNow){
+     public void DisableControl(bool stopNow = false){
         controlEnabled = false;
 
         if(stopNow){
