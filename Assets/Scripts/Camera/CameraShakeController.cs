@@ -14,6 +14,8 @@ public class CameraShakeController : MonoBehaviour
     private CinematicsSoundController soundController;
     private List<Animator> lightsAnimator = new List<Animator>();
     private float fadeOffsetPercentage = 0.25f;
+    private Coroutine lightCoroutine;
+    private Coroutine hardCoroutine;
 
     private void Start()
     {
@@ -43,6 +45,21 @@ public class CameraShakeController : MonoBehaviour
         StartCoroutine(StopLightSwingAndCameraController(fadeOutTime - (fadeOutTime * fadeOffsetPercentage), intensity));
     }
 
+    public void StartLightConstantVibration()
+    {
+        lightCoroutine = StartCoroutine(StartLightConstant(30, 0.4f, 0.6f, 0.1f, 5f, 0));
+    }
+
+    public void StartHardConstantVibration()
+    {
+        hardCoroutine = StartCoroutine(StartLightConstant(30, 0.8f, 0.8f, 0.1f, 5f, 1));
+    }
+
+    public void StopVibrations()
+    {
+        StopAllCoroutines();
+    }
+
     private void SetLigthsSwing(bool state)
     {
         foreach(Animator animator in lightsAnimator)
@@ -66,5 +83,14 @@ public class CameraShakeController : MonoBehaviour
         SetLigthsSwing(false);
         SetCameraController(false);
         soundController.StopSound(intensity);
+    }
+
+    IEnumerator StartLightConstant(float interval, float magnitude, float roughness, float fadeInTime, float fadeOutTime, int intensity)
+    {
+        while (true)
+        {
+            Shake(magnitude, roughness, fadeInTime, fadeOutTime, intensity);
+            yield return new WaitForSeconds(interval);
+        }
     }
 }
