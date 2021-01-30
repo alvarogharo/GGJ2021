@@ -119,6 +119,7 @@ public class DialogueManager : MonoBehaviour
         }else{
             //Fin de dialogo
             DisableControl();
+            superMovement.EnableControl();
         }
     }
 
