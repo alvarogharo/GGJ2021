@@ -17,7 +17,7 @@ public class IntratableFasesController : MonoBehaviour
             keyObjectFaseController[i] = false;
         }
         currentFaseControllers = GetOutlineControllersByFase(currentFase);
-        EnableFase(currentFase);
+        //EnableFase(currentFase);
     }
 
     private void Update() {
@@ -51,6 +51,19 @@ public class IntratableFasesController : MonoBehaviour
             outControllers.Add(GameObject.Find(name).GetComponent<InteractableObjectController>());
         }
         return outControllers;
+    }
+
+    public void AddInteractableObjectByName(string name){
+        InteractableObjectController obj = GameObject.Find(name).GetComponent<InteractableObjectController>();
+        obj.isInteractable = true;
+        currentFaseControllers.Add(obj);
+    }
+    public void RemoveInteractableObjectByName(string name){
+        foreach(InteractableObjectController obj in currentFaseControllers){
+            if(obj.name.Equals(name)){
+                currentFaseControllers.Remove(obj);
+            }
+        }
     }
 
     private void SwitchInteractibleFromControllers(List<InteractableObjectController> outControllers, bool newState)

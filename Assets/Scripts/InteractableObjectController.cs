@@ -88,10 +88,17 @@ public class PhaseAction{
                 this.isRepeated = true;
             }
         }else{
-            int i = UnityEngine.Random.Range(0, repeatedActionDialogueIndex.Length);
-            DialogueAction da = repeatedActionDialogueIndex[timesUsed];
+            DialogueAction da;
+            if(repeatedActionDialogueIndex.Length > 0){
+                int i = UnityEngine.Random.Range(0, repeatedActionDialogueIndex.Length);
+                da = repeatedActionDialogueIndex[i];
+                
+            }else{
+                da = singleActionDialogueIndex[singleActionDialogueIndex.Length-1];
+            }
+
             GameObject.FindObjectOfType<DialogueManager>().StartDialogue(this.phaseIndex, da.dialogueIndex);
-             if(da.dialogueEvent != null){
+            if(da.dialogueEvent != null){
                 da.dialogueEvent.Invoke();
             }
         }

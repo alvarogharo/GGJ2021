@@ -46,7 +46,7 @@
                             "text":"Así que si no te importa, me gustaría que te fueras",
                             "transmitter":0,
                             "delayBefore":0.3,
-                            "eventAfterText":""                        
+                            "eventAfterText":"activateMovement"                        
                         }
                     ]
                 },
@@ -86,7 +86,7 @@
                             "text":"si esto es el destino viniendo a por mi, adelante",
                             "transmitter":0,
                             "delayBefore":0.0,
-                            "eventAfterText":""
+                            "eventAfterText":"enableFirstPhase"
                         }
                     ]
                 },
@@ -575,7 +575,7 @@
                             "text":"MILES?",
                             "transmitter":0,
                             "delayBefore":0.5,
-                            "eventAfterText":"finishPhase"
+                            "eventAfterText":""
                         }
                     ]
                 }
@@ -1160,7 +1160,7 @@
                             "text":"bueno, supongo que no es tan importante...",
                             "transmitter":1,
                             "delayBefore":0.0,
-                            "eventAfterText":"endTransition"
+                            "eventAfterText":""
                         }
                     ]
                 }
