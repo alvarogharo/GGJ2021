@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//[ExecuteInEditMode]
+[ExecuteInEditMode]
 public class Parallax : MonoBehaviour{
 
     public Camera camera;
@@ -13,10 +13,10 @@ public class Parallax : MonoBehaviour{
     public Vector3 correctedPosition;
 
 
-    public float A;
-    public float B;
-    public float C;
-    public float D;
+    private float A;
+    private float B;
+    private float C;
+    private float D;
     
     void Start(){
         realPosition = transform.position;
