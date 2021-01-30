@@ -11,18 +11,18 @@ public class InteractableObjectController : MonoBehaviour
     public PhaseAction[] phaseActions;
     public bool isInteractable;
     public bool hasOutline;
-    private Light2D outlineLight;
-    private AudioSource audioSrc;
-    private IntratableFasesController phaseController;
+    protected Light2D outlineLight;
+    protected AudioSource audioSrc;
+    protected IntratableFasesController phaseController;
     // Start is called before the first frame update
-    void Awake()
+    protected void Awake()
     {
         outlineLight = gameObject.GetComponentInChildren<Light2D>();
         audioSrc = gameObject.GetComponent<AudioSource>();
         phaseController = FindObjectOfType<IntratableFasesController>();
     }
 
-    private void Update()
+    protected void Update()
     {
         if (isInteractable)
         {
@@ -30,12 +30,12 @@ public class InteractableObjectController : MonoBehaviour
         }
     }
 
-    public void Interact(){
+    public virtual void Interact(){
         int index = FindIndexOfPhase(phaseActions, phaseController.currentFase);
         phaseActions[index].UseItem();
     }
 
-    private int FindIndexOfPhase(PhaseAction[] p, int phaseNumber){
+    protected int FindIndexOfPhase(PhaseAction[] p, int phaseNumber){
         for(int i = 0; i < p.Length; i++){
             if(p[i].phaseIndex == phaseNumber){
                 return i;
@@ -45,17 +45,17 @@ public class InteractableObjectController : MonoBehaviour
         return -1;
     }
 
-    private void OnMouseEnter()
+    protected void OnMouseEnter()
     {
         hasOutline = true;
     }
 
-    private void OnMouseExit()
+    protected void OnMouseExit()
     {
         hasOutline = false;
     }
 
-    private void OnMouseDown()
+    protected void OnMouseDown()
     {
         if (isInteractable)
         {

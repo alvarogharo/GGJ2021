@@ -397,7 +397,7 @@ MonoBehaviour:
   interactableObjets:
   - Cora
   currentFase: 0
-  numberOfKeyObjectPerPhase: 
+  numberOfKeyObjectPerPhase: 01000000
 --- !u!4 &392007154
 Transform:
   m_ObjectHideFlags: 0
