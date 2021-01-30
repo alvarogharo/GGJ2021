@@ -118,6 +118,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5bed474cff2c99142859a4cd4e958c69, type: 3}
   volumes:
   - 0.5
+  doesLoops: 
   audioSources: []
   ambientController: {fileID: 0}
 --- !u!1 &862109882354294469
@@ -240,6 +241,7 @@ MonoBehaviour:
   volumes:
   - 0.5
   - 0.375
+  doesLoops: 
   audioSources: []
   ambientController: {fileID: 0}
 --- !u!1 &862109882936839027
@@ -406,10 +408,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClips:
   - {fileID: 8300000, guid: 5bed474cff2c99142859a4cd4e958c69, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 007552832b2854644b6030244d20a310, type: 3}
   volumes:
   - 0.5
-  - 0.5
+  - 0.625
+  doesLoops: 
   audioSources: []
   ambientController: {fileID: 0}
 --- !u!1 &7300864267737839190
@@ -530,5 +533,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5bed474cff2c99142859a4cd4e958c69, type: 3}
   volumes:
   - 0.5
+  doesLoops: 
   audioSources: []
   ambientController: {fileID: 0}
