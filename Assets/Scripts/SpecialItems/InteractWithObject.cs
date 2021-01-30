@@ -11,6 +11,7 @@ public class InteractWithObject : InteractableObjectController
     private List<GameObject> objectList;
     void Start()
     {
+        objectList = new List<GameObject>();
         objectList.AddRange(neededObjects);
     }
 

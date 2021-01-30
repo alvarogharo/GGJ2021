@@ -8,9 +8,12 @@ public class CharacterMovement : MonoBehaviour
     private float speed = 0.1f;
     [SerializeField]
     private GameObject pointTrailPrefab;
+    [SerializeField]
     private bool moving = false;
     private Vector3 pointToGo;
+    [SerializeField]
     private InteractableObjectController interactableObj;
+    [SerializeField]
     private bool controlEnabled;
     private bool firstMovement = true;
     private bool secondMovement = true;
@@ -19,7 +22,7 @@ public class CharacterMovement : MonoBehaviour
     void Start()
     {
         moving = false;
-        controlEnabled = true;
+        controlEnabled = false;
         firstMovement = true;
         secondMovement = true;
     }
@@ -66,6 +69,7 @@ public class CharacterMovement : MonoBehaviour
                 if(!firstMovement && secondMovement){
                     //#4 - Segundo clic frase cuando va allí
                     FindObjectOfType<DialogueManager>().StartDialogue(0, 2);
+                    secondMovement = false;
                 }
             }
         }

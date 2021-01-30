@@ -10,6 +10,7 @@ public class InteractableObjectController : MonoBehaviour
     [Tooltip ("Array de índices de objetos de fase en las que el objeto será útil ")]
     public PhaseAction[] phaseActions;
     public bool isInteractable;
+    public bool interactImmediatly = false;
     public bool hasOutline;
     protected Light2D outlineLight;
     protected AudioSource audioSrc;
@@ -59,7 +60,11 @@ public class InteractableObjectController : MonoBehaviour
     {
         if (isInteractable)
         {
-            FindObjectOfType<CharacterMovement>().SetObject(this);
+            if(interactImmediatly){
+                Interact();
+            }else{
+                FindObjectOfType<CharacterMovement>().SetObject(this);
+            }
             if(audioSrc.clip && !audioSrc.isPlaying){
                 audioSrc.Play(0);
             }

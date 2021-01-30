@@ -5,6 +5,7 @@ using UnityEngine;
 public class FinishCinematicController : MonoBehaviour
 {
     public void FinishCinematic(int index){
+        FindObjectOfType<IntratableFasesController>().isCinematic = false;
         switch(index){
             case 0:
                 //#1 - Finaliza la primera animación - Se activa ratón e interacción con Super
@@ -31,6 +32,7 @@ public class FinishCinematicController : MonoBehaviour
             case 3:
                 //#22 - Fin del juego - Créditos
                 //End of the game
+                Debug.Log("Finish");
                 break;
         }
     }

@@ -7,9 +7,11 @@ public class IntratableFasesController : MonoBehaviour
     public string[] interactableObjets;
     public int currentFase = 0;
     public int[] numberOfKeyObjectPerPhase;
+    public bool isCinematic;
     private List<InteractableObjectController> currentFaseControllers;
     private bool[] keyObjectFaseController;
     private DialogueManager dm;
+    
     // Start is called before the first frame update
     private void Awake()
     {
@@ -23,13 +25,14 @@ public class IntratableFasesController : MonoBehaviour
     }
 
     private void Start() {
+        isCinematic = false;
         //#0 - Primera animación
         FindObjectOfType<CinematicsController>().PlayCurrentAnimationAndUpdateState();
     }
 
     private void Update() {
 
-        if(IsPhaseCompleted() && !dm.IsInDialogue()){ //Falta if cinematic on
+        if(IsPhaseCompleted() && !dm.IsInDialogue() && !isCinematic){ //Falta if cinematic on
             FinishFase(currentFase);
         }
     }
@@ -39,10 +42,11 @@ public class IntratableFasesController : MonoBehaviour
         SwitchInteractibleFromControllers(currentFaseControllers, false);
         currentFaseControllers = GetOutlineControllersByFase(fase);
         SwitchInteractibleFromControllers(currentFaseControllers, true);
-        keyObjectFaseController = new bool[numberOfKeyObjectPerPhase[currentFase]];
+        keyObjectFaseController = new bool[numberOfKeyObjectPerPhase[fase]];
         for(int i = 0; i<keyObjectFaseController.Length; i++){
             keyObjectFaseController[i] = false;
         }
+        Debug.Log(keyObjectFaseController.ToString());
         currentFase = fase;
     }
 

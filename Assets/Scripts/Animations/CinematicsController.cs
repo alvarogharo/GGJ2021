@@ -18,6 +18,7 @@ public class CinematicsController : MonoBehaviour
         if (currentAnimation < cinematicsAnimator.Length)
         {
             cinematicsAnimator[currentAnimation].SetTrigger("Play");
+            FindObjectOfType<IntratableFasesController>().isCinematic = true;
             currentAnimation++;
         }
     }

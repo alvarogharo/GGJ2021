@@ -9,8 +9,9 @@ public class ClothInteraction : InteractableObjectController
 
     public override void Interact(){
         if(FindObjectOfType<CharacterInventory>().AddToInventory(this.gameObject)){
-            FindObjectOfType<InteractWithObject>().isInteractable = true;
-            Destroy(this.gameObject);
+            washingMachine.isInteractable = true;
+            //Lo llevamos arriba porque no se puede borrar si no perdería la referencia
+            this.transform.position = new Vector3(0,100,0);
         }
         
     }

@@ -1018,7 +1018,7 @@
                             "text":"¡Eh! ¡Aquí hay una llave!",
                             "transmitter":1,
                             "delayBefore":1.0,
-                            "eventAfterText":""
+                            "eventAfterText":"addStoreKey"
                         },
                         {
                             "text":"¿Ah si?",
@@ -1148,12 +1148,6 @@
                             "text":"¡Espera!¡Te has dejado aquí tu traje!",
                             "transmitter":1,
                             "delayBefore":2.0,
-                            "eventAfterText":""
-                        },
-                        {
-                            "text":"¿Qué le ocurrió a tu amigo?",
-                            "transmitter":1,
-                            "delayBefore":0.0,
                             "eventAfterText":""
                         },
                         {

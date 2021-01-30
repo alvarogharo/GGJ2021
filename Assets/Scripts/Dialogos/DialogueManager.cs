@@ -37,6 +37,8 @@ public class DialogueManager : MonoBehaviour
         typing = false;
         waiting = false;
         controlEnabled = false;
+        superDialogueText.text = "";
+        handDialogueText.text = "";
         phasesList = GetPhases();
     }
 
@@ -52,6 +54,9 @@ public class DialogueManager : MonoBehaviour
                 }
             }else{
                 if(currentDialogue != null)
+                    if(!currentDialogue.sentences[currentSentenceIndex].eventAfterText.Equals("")){
+                        FindObjectOfType<EventManager>().TriggerEvent(currentDialogue.sentences[currentSentenceIndex].eventAfterText);
+                    }
                     NextSentence();
             }
         }
@@ -130,6 +135,7 @@ public class DialogueManager : MonoBehaviour
             superDialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        typing = false;
     }
 
     private IEnumerator TypeHandDialogue(){

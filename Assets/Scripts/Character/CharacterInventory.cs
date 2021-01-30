@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterInventory : MonoBehaviour
 {
+    [SerializeField]
     private GameObject objectInInventory;
     // Start is called before the first frame update
     void Start()
