@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4844300765313867166}
   - component: {fileID: 4844300765313867165}
+  - component: {fileID: 648548147}
   m_Layer: 0
   m_Name: CameraShakerController
   m_TagString: Untagged
@@ -43,7 +44,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c04b46b7e0a99634fb61a2303c1ff7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnitude: 0.5
-  roughness: 10
-  fadeInTime: 2
-  fadeOutTime: 5
+  defaultMagnitude: 1
+  defaultRoughness: 2
+  defaultFadeInTime: 0.1
+  defaultFadeOutTime: 5
+--- !u!114 &648548147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4844300765313867164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d65ca1bfbfbf84eaa40040f4f70a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 0eb1466b6afbafc41b3d8379954fb41a, type: 3}
+  - {fileID: 8300000, guid: 4269e7b84b23bcf428db6d4089b8a6d2, type: 3}
+  - {fileID: 8300000, guid: 9a03cb7e9ca600042b16f57cafb78ef4, type: 3}
+  volumes:
+  - 0.527
+  - 0.541
+  - 0.5
+  doesLoops: 
+  audioSources: []
+  ambientController: {fileID: 0}

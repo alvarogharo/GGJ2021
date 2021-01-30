@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4363215967878972255}
   - component: {fileID: 4363215967878972252}
   - component: {fileID: 4363215967878972253}
+  - component: {fileID: 432702142}
   m_Layer: 0
   m_Name: CeilingLight
   m_TagString: CeilingLight
@@ -92,3 +93,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &432702142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4363215967878972254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d65ca1bfbfbf84eaa40040f4f70a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: baf32d9b54e876748aabdc917cc1e41d, type: 3}
+  - {fileID: 8300000, guid: 8ee6e3f68dba8d547a07695597bc3c79, type: 3}
+  volumes:
+  - 0.361
+  - 0.361
+  doesLoops: 
+  audioSources: []
+  ambientController: {fileID: 0}

@@ -11,11 +11,13 @@ public class CameraShakeController : MonoBehaviour
     public float defaultFadeOutTime;
     private CameraMovement cameraMovement;
     private CameraShaker cameraShaker;
+    private CinematicsSoundController soundController;
     private List<Animator> lightsAnimator = new List<Animator>();
     private float fadeOffsetPercentage = 0.25f;
 
     private void Start()
     {
+        soundController = gameObject.GetComponent<CinematicsSoundController>();
         GameObject camera = Camera.main.gameObject;
         cameraMovement = camera.GetComponent<CameraMovement>();
         cameraShaker = camera.GetComponent<CameraShaker>();
@@ -31,13 +33,14 @@ public class CameraShakeController : MonoBehaviour
         Shake(defaultMagnitude, defaultRoughness, defaultFadeInTime, defaultFadeOutTime);
     }
 
-    public void Shake(float magnitude, float roughness, float fadeInTime, float fadeOutTime)
+    public void Shake(float magnitude, float roughness, float fadeInTime, float fadeOutTime, int intensity = 0)
     {
         SetCameraController(true);
         SetLigthsSwing(true);
+        soundController.StartSound(intensity);
         CameraShaker.Instance.RestPositionOffset = Camera.main.transform.position;
         CameraShaker.Instance.ShakeOnce(magnitude, roughness, fadeInTime, fadeOutTime);
-        StartCoroutine(StopLightSwingAndCameraController(fadeOutTime - (fadeOutTime * fadeOffsetPercentage)));
+        StartCoroutine(StopLightSwingAndCameraController(fadeOutTime - (fadeOutTime * fadeOffsetPercentage), intensity));
     }
 
     private void SetLigthsSwing(bool state)
@@ -57,10 +60,11 @@ public class CameraShakeController : MonoBehaviour
         }
     }
 
-    IEnumerator StopLightSwingAndCameraController(float seconds)
+    IEnumerator StopLightSwingAndCameraController(float seconds, int intensity)
     {
         yield return new WaitForSeconds(seconds);
         SetLigthsSwing(false);
         SetCameraController(false);
+        soundController.StopSound(intensity);
     }
 }
