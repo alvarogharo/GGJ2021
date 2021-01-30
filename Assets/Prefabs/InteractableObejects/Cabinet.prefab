@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 303623764}
   - component: {fileID: 303623763}
   - component: {fileID: 8534072891847436079}
+  - component: {fileID: -8327950537595871499}
   m_Layer: 0
   m_Name: Cabinet
   m_TagString: InteractableObj
@@ -360,3 +361,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8327950537595871499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279021287461450188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d65ca1bfbfbf84eaa40040f4f70a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 8786922d99f8b0045b39117ce6ba7357, type: 3}
+  - {fileID: 8300000, guid: 5d7762b5500a61e4d94589ce7102473b, type: 3}
+  volumes:
+  - 0.597
+  - 0.638
+  audioSources: []
+  ambientController: {fileID: 0}

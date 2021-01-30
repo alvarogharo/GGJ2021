@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 303623764}
   - component: {fileID: 303623763}
   - component: {fileID: 8534072891847436079}
+  - component: {fileID: -50212465620507545}
   m_Layer: 0
   m_Name: TV
   m_TagString: InteractableObj
@@ -360,3 +361,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-50212465620507545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279021287461450188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d65ca1bfbfbf84eaa40040f4f70a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: b2682edb90d85744985911be61aed5ed, type: 3}
+  - {fileID: 8300000, guid: 7065a983dc1fc8842adee43ea66da40f, type: 3}
+  volumes:
+  - 0.319
+  - 0.22
+  doesLoops: 0001
+  audioSources: []
+  ambientController: {fileID: 0}

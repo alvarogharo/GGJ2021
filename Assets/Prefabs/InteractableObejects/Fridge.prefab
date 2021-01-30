@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 303623764}
   - component: {fileID: 303623763}
   - component: {fileID: 8534072891847436079}
+  - component: {fileID: 1043660908942224724}
   m_Layer: 0
   m_Name: Fridge
   m_TagString: InteractableObj
@@ -360,3 +361,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1043660908942224724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279021287461450188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d65ca1bfbfbf84eaa40040f4f70a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: e5ad6194733e04d46b2825d97efe6f74, type: 3}
+  - {fileID: 8300000, guid: d047a9d91205426419ec8d4e4fb03102, type: 3}
+  volumes:
+  - 0.791
+  - 0.791
+  audioSources: []
+  ambientController: {fileID: 0}

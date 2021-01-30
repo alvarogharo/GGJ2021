@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 62b168e87b72e6a499ca2d6929eb66e8, type: 2}
+  m_Motion: {fileID: 7400000, guid: c935f5c5576783049b71c6f369ee6725, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -75,7 +75,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a6a7a1903c05ab64ebeca86d3e41fd7c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 36df95529bcff7b47bd48ffd36c4e8a7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -87,7 +87,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cinematic2Controller
+  m_Name: Cinematic3Controller
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Play
@@ -155,7 +155,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7c0e69f4fe46370408ccaba7166d3ed2, type: 2}
+  m_Motion: {fileID: 7400000, guid: cb20660df71332a48b0be33d977195db, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
