@@ -20,6 +20,7 @@ public class CajonController : MonoBehaviour
     }
 
     public void Used(){
+        //#14 - Al llegar al último cajón añade llave de despensa
         phaseActions[0].UseItem();
     }
 }
