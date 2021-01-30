@@ -9,9 +9,11 @@ public class IntratableFasesController : MonoBehaviour
     public int[] numberOfKeyObjectPerPhase;
     private List<InteractableObjectController> currentFaseControllers;
     private bool[] keyObjectFaseController;
+    private DialogueManager dm;
     // Start is called before the first frame update
     private void Awake()
     {
+        dm = FindObjectOfType<DialogueManager>();
         keyObjectFaseController = new bool[numberOfKeyObjectPerPhase[currentFase]];
         for(int i = 0; i<keyObjectFaseController.Length; i++){
             keyObjectFaseController[i] = false;
@@ -21,14 +23,12 @@ public class IntratableFasesController : MonoBehaviour
     }
 
     private void Update() {
-        for(int i = 0; i<keyObjectFaseController.Length; i++){
-            if(!keyObjectFaseController[i]){
-                return;
-            }
-        }
 
-        EnableFase(currentFase+1);
+        if(IsPhaseCompleted() && !dm.IsInDialogue()){ //Falta if cinematic on
+            FinishFase(currentFase);
+        }
     }
+    
     public void EnableFase(int fase)
     {
         SwitchInteractibleFromControllers(currentFaseControllers, false);
@@ -39,6 +39,27 @@ public class IntratableFasesController : MonoBehaviour
             keyObjectFaseController[i] = false;
         }
         currentFase = fase;
+    }
+
+    public void FinishFase(int fase){
+        dm.DisableControl();
+        FindObjectOfType<CharacterMovement>().DisableControl();
+        FindObjectOfType<CameraMovement>().DisableControl();
+        FindObjectOfType<CursorController>().HideCursor();
+        
+        //Ocultar ratón
+        //Deshabilitar cámara
+        switch(fase){
+            case 0:
+            //Show cthulu animation 1
+                break;
+            case 1:
+            //Show cthulu animation 2
+                break;
+            case 2:
+            //Show cthulu animation 3
+                break;
+        }
     }
 
     private List<InteractableObjectController> GetOutlineControllersByFase(int fase)
@@ -76,5 +97,14 @@ public class IntratableFasesController : MonoBehaviour
 
     public void UseKeyObject(int index){
         keyObjectFaseController[index] = true;
+    }
+
+    private bool IsPhaseCompleted(){
+        for(int i = 0; i<keyObjectFaseController.Length; i++){
+            if(!keyObjectFaseController[i]){
+                return false;
+            }
+        }
+        return true;
     }
 }

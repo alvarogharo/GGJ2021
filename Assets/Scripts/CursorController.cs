@@ -41,6 +41,7 @@ public class CursorController : MonoBehaviour
         cursorTypes = cursorTypesInit;
         currentState = CursorState.None;
         ChangeCursor(cursorTypes[(int)currentState]);
+        //HideCursor();
         DontDestroyOnLoad(this.gameObject);
         audioSrc = gameObject.GetComponent<AudioSource>();
     }
@@ -116,5 +117,8 @@ public class CursorController : MonoBehaviour
         currentState = (CursorState)Array.IndexOf(cursorTypes, cursorType);
         Cursor.SetCursor(cursorType, Vector2.zero, CursorMode.Auto);
     }
+
+    public void ShowCursor(){Cursor.visible = true;}
+    public void HideCursor(){Cursor.visible = false;}
 
 }

@@ -24,29 +24,20 @@ public class DialogueManager : MonoBehaviour
 
     //References
     private CharacterMovement superMovement;
+    private CameraMovement cameraMovement;
+    private BlackBarsController blackBarsController;
 
     
     private void Awake(){
         superMovement = FindObjectOfType<CharacterMovement>();
+        cameraMovement = FindObjectOfType<CameraMovement>();
+        blackBarsController = FindObjectOfType<BlackBarsController>();
     }
     private void Start(){
         typing = false;
         waiting = false;
         controlEnabled = false;
         phasesList = GetPhases();
-        //Debug.Log(phasesList.Count);
-        //StartDialogue(0, 0);
-        /*var phList = new List<Phase>();
-        var dialogueList = new List<Dialogue>();
-        var sentenceList = new List<Sentence>();
-        for( int i = 0; i < 4; i++){
-            sentenceList.Add(new Sentence("holahola", 0, 1, ""));
-        }
-        dialogueList.Add(new Dialogue(sentenceList));
-        phList.Add(new Phase(dialogueList));
-
-        var json = JsonHelper.ToJson(phList);
-        Debug.Log(json);*/
     }
 
     private void Update(){
@@ -66,8 +57,8 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void EnableControl(){controlEnabled = true;}
-    private void DisableControl(){controlEnabled = false;}
+    public void EnableControl(){controlEnabled = true;}
+    public void DisableControl(){controlEnabled = false;}
     
 
 #region ReadJSON
@@ -97,6 +88,8 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(int phase, int dialogue){
         //Desactivamos el control de movimiento del personaje
         superMovement.DisableControl(true);
+        cameraMovement.DisableControl();
+        blackBarsController.ShowBlackBars();
         EnableControl();
         currentDialogue = phasesList[phase].dialogues[dialogue];
         currentSentenceIndex = -1;
@@ -118,8 +111,11 @@ public class DialogueManager : MonoBehaviour
             }
         }else{
             //Fin de dialogo
+            currentDialogue = null;
             DisableControl();
+            blackBarsController.HideBlackBars();
             superMovement.EnableControl();
+            cameraMovement.EnableControl();
         }
     }
 
@@ -149,6 +145,8 @@ public class DialogueManager : MonoBehaviour
         }
         typing = false;
     }
+
+    public bool IsInDialogue(){return currentDialogue != null;}
 }
 #endregion
 
