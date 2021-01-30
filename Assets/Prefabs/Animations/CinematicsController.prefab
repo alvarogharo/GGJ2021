@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 862109881334753266}
   - component: {fileID: 862109881334753276}
   - component: {fileID: 862109881334753277}
+  - component: {fileID: 507636989}
   m_Layer: 0
   m_Name: Cinematic1
   m_TagString: Untagged
@@ -101,6 +102,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &507636989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862109881334753267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d65ca1bfbfbf84eaa40040f4f70a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 5bed474cff2c99142859a4cd4e958c69, type: 3}
+  volumes:
+  - 0.5
+  audioSources: []
+  ambientController: {fileID: 0}
 --- !u!1 &862109882354294469
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +131,7 @@ GameObject:
   - component: {fileID: 862109882354294468}
   - component: {fileID: 862109882354294470}
   - component: {fileID: 862109882354294471}
+  - component: {fileID: 5904549680248228807}
   m_Layer: 0
   m_Name: Cinematic2
   m_TagString: Untagged
@@ -202,6 +222,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5904549680248228807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862109882354294469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d65ca1bfbfbf84eaa40040f4f70a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 5bed474cff2c99142859a4cd4e958c69, type: 3}
+  - {fileID: 8300000, guid: 6919a267042992e4fa7d73c58f936fb4, type: 3}
+  volumes:
+  - 0.5
+  - 0.375
+  audioSources: []
+  ambientController: {fileID: 0}
 --- !u!1 &862109882936839027
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +301,7 @@ GameObject:
   - component: {fileID: 2113338800880772332}
   - component: {fileID: 248621782127935899}
   - component: {fileID: 3635365396078379063}
+  - component: {fileID: 1033778820762862563}
   m_Layer: 0
   m_Name: Cinematic4
   m_TagString: Untagged
@@ -351,6 +392,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1033778820762862563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3989658003584075611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d65ca1bfbfbf84eaa40040f4f70a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 5bed474cff2c99142859a4cd4e958c69, type: 3}
+  - {fileID: 0}
+  volumes:
+  - 0.5
+  - 0.5
+  audioSources: []
+  ambientController: {fileID: 0}
 --- !u!1 &7300864267737839190
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +423,7 @@ GameObject:
   - component: {fileID: 2947962548616642079}
   - component: {fileID: 4846543345840658118}
   - component: {fileID: 6301811245201213639}
+  - component: {fileID: 1070298874432989732}
   m_Layer: 0
   m_Name: Cinematic3
   m_TagString: Untagged
@@ -452,3 +514,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1070298874432989732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7300864267737839190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d65ca1bfbfbf84eaa40040f4f70a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 5bed474cff2c99142859a4cd4e958c69, type: 3}
+  volumes:
+  - 0.5
+  audioSources: []
+  ambientController: {fileID: 0}
