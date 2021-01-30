@@ -242,7 +242,7 @@
                             "text":"Le echo mucho de menos.",
                             "transmitter":0,
                             "delayBefore":0.0,
-                            "eventAfterText":""
+                            "eventAfterText":"softShake"
                         }
                     ]
                 }
@@ -575,7 +575,7 @@
                             "text":"¿MILES?",
                             "transmitter":0,
                             "delayBefore":0.5,
-                            "eventAfterText":""
+                            "eventAfterText":"hardShake"
                         }
                     ]
                 }
