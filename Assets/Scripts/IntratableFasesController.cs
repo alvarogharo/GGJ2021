@@ -18,6 +18,7 @@ public class IntratableFasesController : MonoBehaviour
         SwitchInteractibleFromControllers(currentFaseControllers, false);
         currentFaseControllers = GetOutlineControllersByFase(fase);
         SwitchInteractibleFromControllers(currentFaseControllers, true);
+        currentFase = fase;
     }
 
     private List<InteractableObjectController> GetOutlineControllersByFase(int fase)

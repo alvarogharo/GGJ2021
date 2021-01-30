@@ -1,19 +1,25 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Experimental.Rendering.Universal;
 
 public class InteractableObjectController : MonoBehaviour
 {
+    [Tooltip ("Array de índices de objetos de fase en las que el objeto será útil ")]
+    public PhaseAction[] phaseActions;
     public bool isInteractable;
     public bool hasOutline;
     private Light2D outlineLight;
     private AudioSource audioSrc;
+    private IntratableFasesController phaseController;
     // Start is called before the first frame update
     void Awake()
     {
         outlineLight = gameObject.GetComponentInChildren<Light2D>();
         audioSrc = gameObject.GetComponent<AudioSource>();
+        phaseController = FindObjectOfType<IntratableFasesController>();
     }
 
     private void Update()
@@ -22,6 +28,21 @@ public class InteractableObjectController : MonoBehaviour
         {
             outlineLight.enabled = hasOutline;
         }
+    }
+
+    public void Interact(){
+        int index = FindIndexOfPhase(phaseActions, phaseController.currentFase);
+        phaseActions[index].UseItem();
+    }
+
+    private int FindIndexOfPhase(PhaseAction[] p, int phaseNumber){
+        for(int i = 0; i < p.Length; i++){
+            if(p[i].phaseIndex == phaseNumber){
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     private void OnMouseEnter()
@@ -36,9 +57,49 @@ public class InteractableObjectController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (isInteractable && audioSrc.clip && !audioSrc.isPlaying)
+        if (isInteractable)
         {
-            audioSrc.Play(0);
+            FindObjectOfType<CharacterMovement>().SetObject(this);
+            if(audioSrc.clip && !audioSrc.isPlaying){
+                audioSrc.Play(0);
+            }
         }
     }
+}
+
+[Serializable]
+public class PhaseAction{
+    public int phaseIndex;
+    private int timesUsed = 0;
+    private bool isRepeated = false;
+    public DialogueAction[] singleActionDialogueIndex;
+    public DialogueAction[] repeatedActionDialogueIndex;
+
+    public void UseItem(){
+        if(!isRepeated){
+            DialogueAction da = singleActionDialogueIndex[timesUsed];
+            GameObject.FindObjectOfType<DialogueManager>().StartDialogue(this.phaseIndex, da.dialogueIndex);
+            if(da.dialogueEvent != null){
+                da.dialogueEvent.Invoke();
+            }
+            this.timesUsed++;
+
+            if(this.timesUsed == singleActionDialogueIndex.Length){
+                this.isRepeated = true;
+            }
+        }else{
+            int i = UnityEngine.Random.Range(0, repeatedActionDialogueIndex.Length);
+            DialogueAction da = repeatedActionDialogueIndex[timesUsed];
+            GameObject.FindObjectOfType<DialogueManager>().StartDialogue(this.phaseIndex, da.dialogueIndex);
+             if(da.dialogueEvent != null){
+                da.dialogueEvent.Invoke();
+            }
+        }
+    }
+}
+
+[Serializable]
+public class DialogueAction{
+    public int dialogueIndex;
+    public UnityEvent dialogueEvent;
 }
