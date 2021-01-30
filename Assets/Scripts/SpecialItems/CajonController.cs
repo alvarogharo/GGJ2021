@@ -11,7 +11,6 @@ public class CajonController : MonoBehaviour
     void Start()
     {
         maxTimes = FindObjectsOfType<Cajon>().Length;
-        counter = 0;
     }
 
     // Update is called once per frame
