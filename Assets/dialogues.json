@@ -1,8 +1,10 @@
 {
     "Items":[
         {
+            "idPhase": 0,
             "dialogues":[
                 {
+                    "idDialogue": 0,
                     "sentences":[
                         {
                             "text":"Hola soy una prueba de texto uwu",

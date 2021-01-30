@@ -170,6 +170,7 @@ public class Sentence{
 
 [Serializable]
 public class Dialogue{
+    public int idDialogue;
     public List<Sentence> sentences;
     public Dialogue(List<Sentence> items){
         this.sentences = items;
@@ -178,6 +179,7 @@ public class Dialogue{
 
 [Serializable]
 public class Phase{
+    public int idPhase;
     public List<Dialogue> dialogues;
     public Phase(List<Dialogue> items){
         this.dialogues = items;
