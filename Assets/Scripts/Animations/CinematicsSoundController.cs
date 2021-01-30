@@ -6,6 +6,7 @@ public class CinematicsSoundController : MonoBehaviour
 {
     public AudioClip[] audioClips;
     public float[] volumes;
+    public bool[] doesLoops;
     public List<AudioSource> audioSources;
     public AmbientSoundController ambientController;
     // Start is called before the first frame update
@@ -18,6 +19,10 @@ public class CinematicsSoundController : MonoBehaviour
             currentAudioSource.clip = audioClips[i];
             currentAudioSource.volume = volumes[i];
             currentAudioSource.playOnAwake = false;
+            if (doesLoops.Length > 0)
+            {
+                currentAudioSource.loop = doesLoops[i];
+            }
             audioSources.Add(currentAudioSource);
         }
     }
