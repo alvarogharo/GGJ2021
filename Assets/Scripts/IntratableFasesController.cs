@@ -22,6 +22,11 @@ public class IntratableFasesController : MonoBehaviour
         //EnableFase(currentFase);
     }
 
+    private void Start() {
+        //#0 - Primera animación
+        FindObjectOfType<CinematicsController>().PlayCurrentAnimationAndUpdateState();
+    }
+
     private void Update() {
 
         if(IsPhaseCompleted() && !dm.IsInDialogue()){ //Falta if cinematic on
@@ -51,13 +56,19 @@ public class IntratableFasesController : MonoBehaviour
         //Deshabilitar cámara
         switch(fase){
             case 0:
-            //Show cthulu animation 1
+                //#6 - Se acaba la primera fase y se pone la animación            
+                //Show cthulu animation 1
+                FindObjectOfType<CinematicsController>().PlayCurrentAnimationAndUpdateState();
                 break;
             case 1:
-            //Show cthulu animation 2
+                //#12 - Finaliza la segunda fase y ponemos segunda animación
+                //Show cthulu animation 2
+                FindObjectOfType<CinematicsController>().PlayCurrentAnimationAndUpdateState();
                 break;
             case 2:
-            //Show cthulu animation 3
+                //#21 - Activamos última animación
+                //Show cthulu animation 3
+                FindObjectOfType<CinematicsController>().PlayCurrentAnimationAndUpdateState();
                 break;
         }
     }

@@ -19,10 +19,14 @@ public class InteractWithObject : InteractableObjectController
         if(objectList.Contains(go)){
             objectList.Remove(go);
         }
+        FindObjectOfType<CharacterInventory>().RemoveInventory();
 
         isInteractable = false;
 
         if(objectList.Count == 0){
+            //#11 - la lavadora tiene toda la ropa y lanza el trigger de la conversación
+            //#16 - la despensa usa la llave
+            //#19 - Abrimos la puerta con la llave de casa
             int index = FindIndexOfPhase(phaseActions, phaseController.currentFase);
             phaseActions[index].UseItem();
         }
