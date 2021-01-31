@@ -15,6 +15,7 @@ public class CinematicsController : MonoBehaviour
 
     public void PlayCurrentAnimationAndUpdateState()
     {
+        transform.position = Camera.main.transform.position;
         if (currentAnimation < cinematicsAnimator.Length)
         {
             cinematicsAnimator[currentAnimation].SetTrigger("Play");
