@@ -44,8 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableObjets:
-  - FriendPhoto,ParentsPhoto,NewsPaper,PostersBatman,PostersJoker,PosterGinGenie
+  - FriendPhoto,ParentsPhoto,NewsPaper,PosterBatman,PosterJoker,PosterGinGenie
   - SuperSuit
   - 1Cabinet,2Cabinet,3Cabinet,4Cabinet,5Cabinet
   currentFase: 0
   numberOfKeyObjectPerPhase: 030000000100000001000000
+  isCinematic: 0

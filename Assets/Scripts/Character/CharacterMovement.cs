@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour
     private GameObject pointTrailPrefab;
     [SerializeField]
     private bool moving = false;
+    private bool moveNow = true;
     private Vector3 pointToGo;
     [SerializeField]
     private InteractableObjectController interactableObj;
@@ -18,11 +19,15 @@ public class CharacterMovement : MonoBehaviour
     private bool firstMovement = true;
     private bool secondMovement = true;
 
+    private float objectOffset = 0.75f;
+    private float moveOffset = 0.1f;
+
     //References to components
     private Animator anim;
 
     private void Awake() {
         anim = GetComponent<Animator>();
+        anim.SetBool("Sitted", true);
     }
     // Start is called before the first frame update
     void Start()
@@ -37,7 +42,7 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(controlEnabled){
+        if(controlEnabled && moveNow){
             if(Input.GetMouseButtonDown(0)){   
                 Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); 
                 worldPosition.z = -7;
@@ -56,6 +61,7 @@ public class CharacterMovement : MonoBehaviour
                 if(firstMovement){
                     //#3 - El primer click no se mueve pero dice una frase
                     FindObjectOfType<DialogueManager>().StartDialogue(0, 1);
+                    anim.SetBool("Sitted", false);
                     firstMovement = false;
                 }     
             }
@@ -64,7 +70,8 @@ public class CharacterMovement : MonoBehaviour
         if(moving){
             float distance = Vector3.Distance(this.transform.position, pointToGo);
             float multiplier = pointToGo.x > this.transform.position.x ? 1 : -1;
-            if(distance > 0.1f){
+            float offset = interactableObj != null ? objectOffset : moveOffset;
+            if(distance > offset){
                  this.transform.position = this.transform.position + new Vector3(speed * multiplier, 0, 0);
             }else{
                 if(interactableObj != null){
@@ -81,6 +88,8 @@ public class CharacterMovement : MonoBehaviour
                 }
             }
         }
+
+        moveNow = true;
     }
 
     IEnumerator ScratchLoop(){
@@ -91,7 +100,7 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
-    public void EnableControl(){controlEnabled = true;}
+    public void EnableControl(){controlEnabled = true; moveNow = false;}
      public void DisableControl(bool stopNow = false){
         controlEnabled = false;
 
@@ -103,7 +112,7 @@ public class CharacterMovement : MonoBehaviour
     public void SetPointToGo(Vector3 point){
         if(controlEnabled){
             pointToGo = new Vector3(point.x, this.transform.position.y, this.transform.position.z);
-            GetComponent<SpriteRenderer>().flipX = transform.position.x > pointToGo.x;
+            GetComponent<SpriteRenderer>().flipX = transform.position.x < pointToGo.x;
             moving = true;
             anim.SetBool("Walking", true);
         }
