@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour
     //Transforms
     private Transform superTransform;
     private Transform handTransform;
+    private AudioSource audioSource;
 
     
     private void Awake(){
@@ -39,6 +40,7 @@ public class DialogueManager : MonoBehaviour
         blackBarsController = FindObjectOfType<BlackBarsController>();
         superTransform = superDialogueText.transform.parent.parent.parent.parent;
         handTransform = handDialogueText.transform.parent.parent.parent.parent;
+        audioSource = GetComponent<AudioSource>();
     }
     private void Start(){
         typing = false;
@@ -169,6 +171,7 @@ public class DialogueManager : MonoBehaviour
         foreach(char letter in currentDialogue.sentences[currentSentenceIndex].text.ToCharArray())
         {
             superDialogueText.text += letter;
+            audioSource.Play();
             yield return new WaitForSeconds(typingSpeed);
         }
         typing = false;
@@ -183,6 +186,7 @@ public class DialogueManager : MonoBehaviour
         foreach(char letter in currentDialogue.sentences[currentSentenceIndex].text.ToCharArray())
         {
             handDialogueText.text += letter;
+            audioSource.Play();
             yield return new WaitForSeconds(typingSpeed);
         }
         typing = false;
