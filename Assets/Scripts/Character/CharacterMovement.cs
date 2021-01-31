@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour
     private GameObject pointTrailPrefab;
     [SerializeField]
     private bool moving = false;
+    private bool moveNow = true;
     private Vector3 pointToGo;
     [SerializeField]
     private InteractableObjectController interactableObj;
@@ -26,6 +27,7 @@ public class CharacterMovement : MonoBehaviour
 
     private void Awake() {
         anim = GetComponent<Animator>();
+        anim.SetBool("Sitted", true);
     }
     // Start is called before the first frame update
     void Start()
@@ -40,7 +42,7 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(controlEnabled){
+        if(controlEnabled && moveNow){
             if(Input.GetMouseButtonDown(0)){   
                 Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); 
                 worldPosition.z = -7;
@@ -59,6 +61,7 @@ public class CharacterMovement : MonoBehaviour
                 if(firstMovement){
                     //#3 - El primer click no se mueve pero dice una frase
                     FindObjectOfType<DialogueManager>().StartDialogue(0, 1);
+                    anim.SetBool("Sitted", false);
                     firstMovement = false;
                 }     
             }
@@ -85,6 +88,8 @@ public class CharacterMovement : MonoBehaviour
                 }
             }
         }
+
+        moveNow = true;
     }
 
     IEnumerator ScratchLoop(){
@@ -95,7 +100,7 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
-    public void EnableControl(){controlEnabled = true;}
+    public void EnableControl(){controlEnabled = true; moveNow = false;}
      public void DisableControl(bool stopNow = false){
         controlEnabled = false;
 
