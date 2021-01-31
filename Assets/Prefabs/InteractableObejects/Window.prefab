@@ -68,10 +68,10 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 0.28
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: 3.7650237, y: -0.45122707, z: 0}
-  - {x: 3.7194138, y: 1.0559787, z: 0}
-  - {x: -1.2603287, y: 1.0261953, z: 0}
-  - {x: -1.2214807, y: -0.44715273, z: 0}
+  - {x: 1.0753627, y: -0.58876646, z: 0}
+  - {x: 1.045033, y: 0.903157, z: 0}
+  - {x: -3.919425, y: 0.90393806, z: 0}
+  - {x: -3.9111414, y: -0.5846921, z: 0}
 --- !u!1 &6279021287461450188
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,13 +146,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -383833888692993419, guid: b9bd9f056cc9a184e8d9c987b8936a83,
+  m_Sprite: {fileID: 5088846246167218501, guid: 262182a171297e149a3cfe2d9c9276a9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 18.85, y: 18.65}
+  m_Size: {x: 5.375, y: 1.5625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -283,16 +283,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.5451722, y: 0.15425348}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 11.3125, y: 4.9375}
-    newSize: {x: 18.85, y: 18.65}
+    oldSize: {x: 5.375, y: 1.5625}
+    newSize: {x: 5.375, y: 1.5625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.2452173, y: 1.5439348}
+  m_Size: {x: 5.375, y: 1.5625}
   m_EdgeRadius: 0
