@@ -18,6 +18,9 @@ public class CharacterMovement : MonoBehaviour
     private bool firstMovement = true;
     private bool secondMovement = true;
 
+    private float objectOffset = 0.75f;
+    private float moveOffset = 0.1f;
+
     //References to components
     private Animator anim;
 
@@ -64,7 +67,8 @@ public class CharacterMovement : MonoBehaviour
         if(moving){
             float distance = Vector3.Distance(this.transform.position, pointToGo);
             float multiplier = pointToGo.x > this.transform.position.x ? 1 : -1;
-            if(distance > 0.1f){
+            float offset = interactableObj != null ? objectOffset : moveOffset;
+            if(distance > offset){
                  this.transform.position = this.transform.position + new Vector3(speed * multiplier, 0, 0);
             }else{
                 if(interactableObj != null){
