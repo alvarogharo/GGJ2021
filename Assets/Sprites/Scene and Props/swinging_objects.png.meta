@@ -1,31 +1,16 @@
 fileFormatVersion: 2
-guid: 4068557940ceb2945bc037aca0c8071d
+guid: 21945ac7f084d4d40bfe582899e2bd9c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8197047826604361390
-    second: bedroom_0
+      213: 2123360498503673086
+    second: swinging_objects_kitchen_lamp
   - first:
-      213: 4736947123705276130
-    second: bedroom_1
+      213: 7807612532363901375
+    second: swinging_objects_dead_plant
   - first:
-      213: 2025611399618296760
-    second: bedroom_2
-  - first:
-      213: -1546319696498959925
-    second: bedroom_3
-  - first:
-      213: 8859468537177252224
-    second: bedroom_4
-  - first:
-      213: -5768650751410032934
-    second: bedroom_5
-  - first:
-      213: 4930428974814493766
-    second: bedroom_6
-  - first:
-      213: 3409529700742947499
-    second: bedroom_7
+      213: 2008846540963099932
+    second: swinging_objects_plant
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,14 +49,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -123,13 +108,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bedroom_0
+      name: swinging_objects_kitchen_lamp
       rect:
         serializedVersion: 2
-        x: 5
-        y: 37
-        width: 123
-        height: 79
+        x: 0
+        y: 77
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,125 +122,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea604a78193c1c170800000000000000
-      internalID: 8197047826604361390
+      spriteID: ef468639f11b77d10800000000000000
+      internalID: 2123360498503673086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bedroom_1
+      name: swinging_objects_dead_plant
       rect:
         serializedVersion: 2
-        x: 130
-        y: 67
-        width: 76
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e6e244cf440db140800000000000000
-      internalID: 4736947123705276130
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bedroom_2
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 68
-        width: 33
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bbfa37f5da6c1c10800000000000000
-      internalID: 2025611399618296760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bedroom_3
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 5
-        width: 15
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc95df4cd6e5a8ae0800000000000000
-      internalID: -1546319696498959925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bedroom_4
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 6
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0812331f1b723fa70800000000000000
-      internalID: 8859468537177252224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bedroom_5
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 21
-        width: 17
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ade2ae884b2a1ffa0800000000000000
-      internalID: -5768650751410032934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bedroom_6
-      rect:
-        serializedVersion: 2
-        x: 129
+        x: 0
         y: 38
-        width: 77
-        height: 15
+        width: 16
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,8 +143,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64c7c12b7076c6440800000000000000
-      internalID: 4930428974814493766
+      spriteID: fb9307f4b363a5c60800000000000000
+      internalID: 7807612532363901375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging_objects_plant
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15b062294bd0eb10800000000000000
+      internalID: 2008846540963099932
       vertices: []
       indices: 
       edges: []
