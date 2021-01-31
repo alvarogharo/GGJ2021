@@ -52,7 +52,10 @@ public class IntratableFasesController : MonoBehaviour
 
     public void FinishFase(int fase){
         dm.DisableControl();
-        FindObjectOfType<CharacterMovement>().DisableControl();
+        CharacterMovement cm = FindObjectOfType<CharacterMovement>();
+        if(cm.gameObject.activeSelf){
+            cm.DisableControl();
+        }
         FindObjectOfType<CameraMovement>().DisableControl();
         FindObjectOfType<CursorController>().HideCursor();
         

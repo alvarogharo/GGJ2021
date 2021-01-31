@@ -23,6 +23,7 @@ public class InteractWithObject : InteractableObjectController
         FindObjectOfType<CharacterInventory>().RemoveInventory();
 
         isInteractable = false;
+        outlineLight.enabled = false;
 
         if(objectList.Count == 0){
             //#11 - la lavadora tiene toda la ropa y lanza el trigger de la conversación

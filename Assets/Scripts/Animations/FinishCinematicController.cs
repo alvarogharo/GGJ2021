@@ -29,6 +29,7 @@ public class FinishCinematicController : MonoBehaviour
                 FindObjectOfType<CharacterMovement>().EnableControl();
                 FindObjectOfType<CameraMovement>().EnableControl();
                 FindObjectOfType<IntratableFasesController>().EnableFase(2);
+                FindObjectOfType<CameraShakeController>().StopVibrations();
                 FindObjectOfType<CameraShakeController>().StartHardConstantVibration();
                 FindObjectOfType<DialogueManager>().StartDialogue(2,0);
                 break;
@@ -36,6 +37,7 @@ public class FinishCinematicController : MonoBehaviour
                 //#22 - Fin del juego - Créditos
                 //End of the game
                 Debug.Log("Finish");
+                Application.Quit();
                 break;
         }
     }

@@ -63,6 +63,7 @@ public class EventManager : MonoBehaviour
                 break;
             case "openDoor":
                 //#20 - Animación de abrir la puerta
+                GameObject.Find("Super").SetActive(false);
                //TO DO
                break;
         }

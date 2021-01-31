@@ -16,7 +16,7 @@ public class CharacterInventory : MonoBehaviour
     public bool AddToInventory(GameObject go){
         if(objectInInventory == null){
             objectInInventory = go;
-            Image image = GameObject.FindGameObjectWithTag("InventoryUI").transform.GetChild(0).GetChild(0).GetComponent<Image>();
+            Image image = GameObject.FindGameObjectWithTag("InventoryUI").GetComponent<Image>();
             image.sprite = objectInInventory.GetComponent<SpriteRenderer>().sprite;
             image.color = new Color(1,1,1,1);
             //UpdateUI
@@ -28,7 +28,7 @@ public class CharacterInventory : MonoBehaviour
 
     public void RemoveInventory(){
         objectInInventory = null;
-        Image image = GameObject.FindGameObjectWithTag("InventoryUI").transform.GetChild(0).GetChild(0).GetComponent<Image>();
+        Image image = GameObject.FindGameObjectWithTag("InventoryUI").GetComponent<Image>();
         image.sprite = null;
         image.color = new Color(1,1,1,0);
         //UpdateUI

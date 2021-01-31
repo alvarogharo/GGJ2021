@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 0.1f;
+    private float speed = 3f;
     [SerializeField]
     private GameObject pointTrailPrefab;
     [SerializeField]
@@ -72,7 +72,7 @@ public class CharacterMovement : MonoBehaviour
             float multiplier = pointToGo.x > this.transform.position.x ? 1 : -1;
             float offset = interactableObj != null ? objectOffset : moveOffset;
             if(distance > offset){
-                 this.transform.position = this.transform.position + new Vector3(speed * multiplier, 0, 0);
+                 this.transform.position = this.transform.position + new Vector3(speed * multiplier * Time.deltaTime, 0, 0);
             }else{
                 if(interactableObj != null){
                     interactableObj.Interact();

@@ -55,7 +55,7 @@ public class CameraShakeController : MonoBehaviour
 
     public void StartHardConstantVibration()
     {
-        hardCoroutine = StartCoroutine(StartLightConstant(30, 0.8f, 0.8f, 0.1f, 5f, 1));
+        hardCoroutine = StartCoroutine(StartLightConstant(30, 0.8f, 0.8f, 0.1f, 5f, 0));
     }
 
     public void StopVibrations()
