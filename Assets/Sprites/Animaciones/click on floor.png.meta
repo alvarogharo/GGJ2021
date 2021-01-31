@@ -1,28 +1,40 @@
 fileFormatVersion: 2
-guid: f6463091dd27d8144afc2d324816e293
+guid: 2bb239895c766b246923aef167d53ae1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6499218950963879228
-    second: Claire Sit Idle_0
+      213: -7822789594868444402
+    second: click on floor_0
   - first:
-      213: 5687549193867248977
-    second: Claire Sit Idle_1
+      213: -1179687070689893781
+    second: click on floor_1
   - first:
-      213: 1585744819224458874
-    second: Claire Sit Idle_2
+      213: 5021426801576085770
+    second: click on floor_2
   - first:
-      213: 6395562998776153115
-    second: Claire Sit Idle_3
+      213: 7653883353193239082
+    second: click on floor_3
   - first:
-      213: 8765082141125310360
-    second: Claire Sit Idle_4
+      213: -8593397721726435427
+    second: click on floor_4
   - first:
-      213: 805452954978649764
-    second: Claire Sit Idle_5
+      213: -9132729557840446808
+    second: click on floor_5
   - first:
-      213: -5206463016998655495
-    second: Claire Sit Idle_6
+      213: 3406873035991746317
+    second: click on floor_6
+  - first:
+      213: -1276363818405907290
+    second: click on floor_7
+  - first:
+      213: 6666823730790501719
+    second: click on floor_8
+  - first:
+      213: -7800161049823553139
+    second: click on floor_9
+  - first:
+      213: -197398215653393478
+    second: click on floor_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -120,148 +132,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Claire Sit Idle_0
+      name: click on floor_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 26
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c2af466cc22ec5a0800000000000000
-      internalID: -6499218950963879228
+      spriteID: e039e357f4edf6390800000000000000
+      internalID: -7822789594868444402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Claire Sit Idle_1
+      name: click on floor_1
       rect:
         serializedVersion: 2
-        x: 26
+        x: 16
         y: 0
-        width: 26
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 155440f9bdb3eee40800000000000000
-      internalID: 5687549193867248977
+      spriteID: b6268650cd8e0afe0800000000000000
+      internalID: -1179687070689893781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Claire Sit Idle_2
+      name: click on floor_2
       rect:
         serializedVersion: 2
-        x: 52
+        x: 32
         y: 0
-        width: 26
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a763a4ee282b10610800000000000000
-      internalID: 1585744819224458874
+      spriteID: a0981954211bfa540800000000000000
+      internalID: 5021426801576085770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Claire Sit Idle_3
+      name: click on floor_3
       rect:
         serializedVersion: 2
-        x: 78
+        x: 48
         y: 0
-        width: 26
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b144fa889aa91c850800000000000000
-      internalID: 6395562998776153115
+      spriteID: a22db539b5e083a60800000000000000
+      internalID: 7653883353193239082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Claire Sit Idle_4
+      name: click on floor_4
       rect:
         serializedVersion: 2
-        x: 104
+        x: 64
         y: 0
-        width: 26
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 897f4e894c3d3a970800000000000000
-      internalID: 8765082141125310360
+      spriteID: d9f38d64d4e1eb880800000000000000
+      internalID: -8593397721726435427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Claire Sit Idle_5
+      name: click on floor_5
       rect:
         serializedVersion: 2
-        x: 130
+        x: 80
         y: 0
-        width: 26
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a68ac0f13b8d2b00800000000000000
-      internalID: 805452954978649764
+      spriteID: 8aab53bbad6024180800000000000000
+      internalID: -9132729557840446808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Claire Sit Idle_6
+      name: click on floor_6
       rect:
         serializedVersion: 2
-        x: 156
+        x: 96
         y: 0
-        width: 26
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f92697987deeb7b0800000000000000
-      internalID: -5206463016998655495
+      spriteID: d070521d9f4a74f20800000000000000
+      internalID: 3406873035991746317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click on floor_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a431cf9ed1794ee0800000000000000
+      internalID: -1276363818405907290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click on floor_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d89ed5cd0558c50800000000000000
+      internalID: 6666823730790501719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click on floor_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89dd6a2ad240c390800000000000000
+      internalID: -7800161049823553139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click on floor_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbfea46e53b24df0800000000000000
+      internalID: -197398215653393478
       vertices: []
       indices: 
       edges: []
