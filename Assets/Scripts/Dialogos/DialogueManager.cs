@@ -72,14 +72,14 @@ public class DialogueManager : MonoBehaviour
         if(superTransform.position.x > Camera.main.transform.position.x){
             superDialogueText.transform.parent.parent.GetComponent<VerticalLayoutGroup>().childAlignment = TextAnchor.UpperRight;
             Vector3 pos = superDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition;
-            pos.x = -2.5f;
+            pos.x = -2.7f;
             superDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition = pos;
         }
         //Super text at right
         if(superTransform.position.x < Camera.main.transform.position.x){
             superDialogueText.transform.parent.parent.GetComponent<VerticalLayoutGroup>().childAlignment = TextAnchor.UpperLeft;
             Vector3 pos = superDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition;
-            pos.x = 2.5f;
+            pos.x = 2.7f;
             superDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition = pos;
         }
         //Hand text at left
