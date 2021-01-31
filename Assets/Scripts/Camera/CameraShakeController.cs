@@ -32,17 +32,20 @@ public class CameraShakeController : MonoBehaviour
 
     public void ShakeDefault()
     {
-        Shake(defaultMagnitude, defaultRoughness, defaultFadeInTime, defaultFadeOutTime);
+        Shake(defaultMagnitude, defaultRoughness, defaultFadeInTime, defaultFadeOutTime, false);
     }
 
-    public void Shake(float magnitude, float roughness, float fadeInTime, float fadeOutTime, int intensity = 0)
+    public void Shake(float magnitude, float roughness, float fadeInTime, float fadeOutTime, bool doesSound = true, int intensity = 0)
     {
         SetCameraController(true);
         SetLigthsSwing(true);
-        soundController.StartSound(intensity);
+        if (doesSound)
+        {
+            soundController.StartSound(intensity);
+        }
         CameraShaker.Instance.RestPositionOffset = Camera.main.transform.position;
         CameraShaker.Instance.ShakeOnce(magnitude, roughness, fadeInTime, fadeOutTime);
-        StartCoroutine(StopLightSwingAndCameraController(fadeOutTime - (fadeOutTime * fadeOffsetPercentage), intensity));
+        StartCoroutine(StopLightSwingAndCameraController(fadeOutTime - (fadeOutTime * fadeOffsetPercentage), intensity, doesSound));
     }
 
     public void StartLightConstantVibration()
@@ -77,19 +80,22 @@ public class CameraShakeController : MonoBehaviour
         }
     }
 
-    IEnumerator StopLightSwingAndCameraController(float seconds, int intensity)
+    IEnumerator StopLightSwingAndCameraController(float seconds, int intensity, bool doesSound)
     {
         yield return new WaitForSeconds(seconds);
         SetLigthsSwing(false);
         SetCameraController(false);
-        soundController.StopSound(intensity);
+        if (doesSound)
+        {
+            soundController.StopSound(intensity);
+        }
     }
 
     IEnumerator StartLightConstant(float interval, float magnitude, float roughness, float fadeInTime, float fadeOutTime, int intensity)
     {
         while (true)
         {
-            Shake(magnitude, roughness, fadeInTime, fadeOutTime, intensity);
+            Shake(magnitude, roughness, fadeInTime, fadeOutTime, true, intensity);
             yield return new WaitForSeconds(interval);
         }
     }

@@ -2862,88 +2862,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 184135194, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 332388149, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459105780, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 556024114, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 817432894, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 933969411, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018526288, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1041015315, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1094918832, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1148976559, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1455080001, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1491851286, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1530995090, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534363022, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1720851516, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1747428236, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880171363, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2080952616, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 862109881334753267, guid: 00869506af09e0141ac5ff1e544cc8ef,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 862109882354294469, guid: 00869506af09e0141ac5ff1e544cc8ef,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 862109882936839026, guid: 00869506af09e0141ac5ff1e544cc8ef,
         type: 3}
       propertyPath: m_RootOrder
@@ -3003,11 +2921,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CinematicsController
-      objectReference: {fileID: 0}
-    - target: {fileID: 7300864267737839190, guid: 00869506af09e0141ac5ff1e544cc8ef,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00869506af09e0141ac5ff1e544cc8ef, type: 3}
