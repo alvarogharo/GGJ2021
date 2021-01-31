@@ -19,7 +19,7 @@ public class CharacterMovement : MonoBehaviour
     private bool firstMovement = true;
     private bool secondMovement = true;
 
-    private float objectOffset = 0.75f;
+    private float objectOffset = 1.5f;
     private float moveOffset = 0.1f;
 
     //References to components

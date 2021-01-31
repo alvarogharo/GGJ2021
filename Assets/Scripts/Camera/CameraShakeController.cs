@@ -95,7 +95,7 @@ public class CameraShakeController : MonoBehaviour
     {
         while (true)
         {
-            Shake(magnitude, roughness, fadeInTime, fadeOutTime, true, intensity);
+            Shake(magnitude, roughness, fadeInTime, fadeOutTime, false, intensity);
             yield return new WaitForSeconds(interval);
         }
     }

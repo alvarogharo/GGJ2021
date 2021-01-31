@@ -58,6 +58,12 @@ TagManager:
   - name: Personajes
     uniqueID: 3890072957
     locked: 0
+  - name: TV
+    uniqueID: 1677196993
+    locked: 0
+  - name: Hand
+    uniqueID: 2825947445
+    locked: 0
   - name: Cinematic
     uniqueID: 3431252975
     locked: 0
