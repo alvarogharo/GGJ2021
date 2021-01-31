@@ -1,0 +1,1260 @@
+{
+    "Items":[
+        {
+            "idPhase": 0,
+            "dialogues":[
+                {
+                    "idDialogue": 0,
+                    "sentences":[
+                        {
+                            "text":"Eres tú...",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Qué..?¿quién habla?",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Qué eres?¿Cómo has entrado?",
+                            "transmitter":0,
+                            "delayBefore":2.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Mmm, bueno… ¿Que qué soy? No lo sé, un fantasma probablemente, pero eso no importa. Lo que importa es que soy…",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡TU FAN NÚMERO 1!",
+                            "transmitter":1,
+                            "delayBefore":0.5,
+                            "eventAfterText":""                        
+                        },
+                        {
+                            "text":"¿Sabes? Me pillas en un mal momento, tanto que ni siquiera me preocupa tener una mano amputada flotante que me habla en mi propia casa.",
+                            "transmitter":0,
+                            "delayBefore":0.3,
+                            "eventAfterText":""                        
+                        },
+                        {
+                            "text":"Así que si no te importa, me gustaría que te fueras.",
+                            "transmitter":0,
+                            "delayBefore":0.3,
+                            "eventAfterText":"activateMovement"                        
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 1,
+                    "sentences":[
+                        {
+                            "text":"¿Qué acabas de hacer?",
+                            "transmitter":0,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No lo sé… es la primera vez que lo hago.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Siento unas ganas irrefrenables de ir hacia donde has señalado.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 2,
+                    "sentences":[
+                        {
+                            "text":"Vale, no sé qué intenciones tienes ni por qué puedes ejercer este poder sobre mí, pero si te soy sincera ya me da todo igual.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Si esto es el destino viniendo a por mí, adelante.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":"enableFirstPhase"
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 3,
+                    "sentences":[
+                        {
+                            "text":"Batman, ¿eh? Vaya idea tuvieron sus padres metiéndose en “el callejón del crimen” vestidos de “róbanos, somos ricos”.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 4,
+                    "sentences":[
+                        {
+                            "text":"Gin Genie. Puede generar seismos en función de su cantidad de alcohol en sangre...",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Últimamente me siento muy identificada con ella.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 5,
+                    "sentences":[
+                        {
+                            "text":" El Joker, cómo no. Algo que siempre me ha fascinado de los cómics de superhéroes que leía de niña eran los villanos.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":" Ojalá existiera alguno en el mundo real, te permiten hablarle cara a cara al mal personificado, y preguntarle por qué.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":" Aunque la respuesta sea una risa maníaca, es mejor que el silencio de la realidad.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 6,
+                    "sentences":[
+                        {
+                            "text":"¡Guau! Eres tú la primera vez que hiciste una aparición como súper no?. ¡Pone que evitaste que un autobús escolar cayera por un precipicio!",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿No eras mi mayor fan? Deberías sabértelo de memoria.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Si, bueno, he estado desactualizado últimamente...",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Sabes lo que descubrí hace un tiempo? Ese mismo día, murieron 30 personas en un ataque terrorista en Líbano.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":" Y otras 12 fallecieron en un terremoto en México.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Bueno, sí, supongo que es uno de los problemas de ser la única superheroína del planeta. No puedes salvar a todo el mundo.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No, no puedo.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 7,
+                    "sentences":[
+                        {
+                            "text":"Hija de superhéroes, eres la combinación perfecta de ellos. Pero hay algo que nunca me quedó claro. ¿Por qué lo dejaron?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Bueno, para ellos lo de salvar el mundo no soluciona nada. De hecho están convencidos de que sólo lo empeora.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Cuanto más resistencia opone el bien, más maldad surge para combatirlo. Y cada vez estoy más convencida de que tienen razón.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Y nunca te ayudan en tus aventuras? Quiero decir, los tres formaríais un equipo invencible.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No me hablo con ellos desde que… bueno. No creo que estén orgullosos de en lo que me he convertido.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 8,
+                    "sentences":[
+                        {
+                            "text":"¿Quién es este chico tan apuesto vestido de Batman? Al lado tiene a una especie de… niña rara que intenta parecerse a Robin.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Eh, venga ya! Estuve un mes preparando ese traje con mi madre.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Estaba de coña. ¿Quién es él?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Es Miles, mi mejor amigo de la infancia.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Jamás supo que yo tenía superpoderes, y aún así me convenció de que era la persona más especial del universo.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"...",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Y si te preguntas por qué el va de Batman y no al revés, es porque le volvía loco.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Los dos estábamos obsesionados con los cómics, pero lo suyo con el murciélago... ",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Estuve a punto de regalarle una muñeca hinchable con forma de Batman, pero no veas lo difícil que es pintar con negro sobre plástico. ",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Bueno, y las orejas de gato no daban mucho el pego.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Estoy seguro de que le hubiera encantado. Lo habría quemado en el jardín, pero le habría encantado.",
+                            "transmitter":1,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Le echo mucho de menos.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":"softShake"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idPhase": 1,
+            "dialogues":[
+                {
+                    "idDialogue": 0,
+                    "sentences":[
+                        {
+                            "text":"Sé lo que pretendes, y no va a funcionar…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 1,
+                    "sentences":[
+                        {
+                            "text":"No insistas, mano. He tomado una decisión. Llevo mucho tiempo pensando en ello.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 2,
+                    "sentences":[
+                        {
+                            "text":"¡BASTA!¡No voy a salir a salvar el mundo esta vez!",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Pero…",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"...",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Vale, está bien.Tendrás tus motivos, no me cabe duda",
+                            "transmitter":1,
+                            "delayBefore":0.5,
+                            "eventAfterText":"activateFridgeTV"
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 3,
+                    "sentences":[
+                        {
+                            "text":"No tengo hambre ahora mismo…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Guau! Sí que tienes escasez de provisiones.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Si llegas a aparecer la semana pasada, lo único que hubieras visto serían tarrinas de chocolate.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 4,
+                    "sentences":[
+                        {
+                            "text":"No va a cambiar nada por mirar de nuevo…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 5,
+                    "sentences":[
+                        {
+                            "text":"¿Qué es esa cosa? Parece como si un pulpo hubiera tenido un hijo con un elefante bípedo.",
+                            "transmitter":1,
+                            "delayBefore":1.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Oh venga ya! ¿Han invocado a Cthulhu? Esperaba que fuera poco más que un terremoto...",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Sigues pensando que no te necesitan?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Si, mano, lo sigo pensando.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":"tvOffwindowOn"
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 6,
+                    "sentences":[
+                        {
+                            "text":"No necesito verlo, sé cómo funciona.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"A pesar del color verdoso del cielo y esas llamas, la ciudad es bonita.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"...",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Naciste aquí?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No, nací en un pueblo cercano. Me mudé aquí con 10 años. Lo pasé un poco mal en el colegio hasta que conocí a Miles.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Qué fue de el?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Oye, haces demasiadas preguntas, ¿no? Una cosa es que puedas alterar mi voluntad de moverme y otra muy distinta es que me hagas un interrogatorio.",
+                            "transmitter":0,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Soy tu fan número 1, recuérdalo.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Ya…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Creo que tengo una idea. Me he dado cuenta de que cuando me muevo siguiendo tu voluntad, no gasto apenas energía.",
+                            "transmitter":0,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Es bueno saberlo.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Y hace muchos días que no tengo fuerzas para nada. Si me ayudas a poner una lavadora te responderé a esa pregunta.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"...",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Escuchas esos crujidos? ¿los temblores?. Lo que suena es un pez raro gigante pisoteando cosas, como mínimo, por si no te has percatado.",
+                            "transmitter":1,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿quieres que te responda o no?",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Si quiero.",
+                            "transmitter":1,
+                            "delayBefore":1.0,
+                            "eventAfterText":"activateClothes"
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 7,
+                    "sentences":[
+                        {
+                            "text":"Y con eso estaría todo. Gracias, mano.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No hay de qué.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Oye, no me mires asi. Bueno, no tienes ojos, pero ya me entiendes. Se que lo que está pasando ahí fuera es muy serio, pero no es mi responsabilidad. Ya no.",
+                            "transmitter":0,
+                            "delayBefore":2.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Qué pregunta querías hacerme?",
+                            "transmitter":0,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Qué le ocurrió a tu amigo?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Claro... El murió en un accidente de coche. Yo iba dentro también, y pude haberlo evitado, pero mis padres me habían forjado a fuego que jamás debía usar mis poderes. ",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"El padre de Miles, que conducía el coche, sobrevivió. Miles murió en el hospital a las pocas horas.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Lo siento…",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Jamás perdoné a mis padres que me enseñaran a ocultar quien era. Y durante años les culpé de la muerte de Miles. ",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":" Hace tiempo que sé que nunca fueron responsables. Hicieron lo que pensaron que sería mejor para protegerme, y no puedo culparles.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿No has vuelto a hablar con ellos?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No, es demasiado tarde y las heridas son muy profundas.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Yo solo soy una mano que habla pero creo de verdad que nunca es tarde.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Hay distintos puntos de vista…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Al tiempo de ocurrir decidí que jamás volvería a ocultar mis poderes. Me fui de casa y me convertí en quien soy ahora. Bueno, en quién era…",
+                            "transmitter":0,
+                            "delayBefore":0.5,
+                            "eventAfterText":"hardShake"
+                        },
+                        {
+                            "text":"No sé cómo he llegado aquí, pero creo que cada vez tengo más claro el motivo, Claire...",
+                            "transmitter":1,
+                            "delayBefore":1.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Cómo sabes mi verdadero nombre?",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"En todas las historias de Batman que leíste, ¿de verdad crees que Batman necesitaba la ayuda de robin en la pelea? ",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Estamos hablando de Batman, maldita sea. No necesitaba a nadie. Robin estaba ahí para recordarle que el mundo no está condenado.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Que toda esa oscuridad, esa maldad, necesitan alguien que les plante cara. Que cada batalla que se gane contra el mal es un paso más para alcanzar la victoria.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Y creo que estoy aquí para recordarte eso.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Deja que yo sea tu Robin por una vez, Claire",
+                            "transmitter":1,
+                            "delayBefore":0.5,
+                            "eventAfterText":"exclamationShow"
+                        },
+                        {
+                            "text":"¿MILES?",
+                            "transmitter":0,
+                            "delayBefore":0.5,
+                            "eventAfterText":"hardShake"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idPhase": 2,
+            "dialogues":[
+                {
+                    "idDialogue": 0,
+                    "sentences":[
+                        {
+                            "text":"No… No… No puede ser… Miles, yo…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No hace falta que digas nada.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"SI, SI HACE FALTA, MILES.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No hice nada para salvarte, ¡nada! Y podría haberlo hecho. Jamás podrás perdonarme.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Llevo arrastrando el peso de tu muerte desde que ocurrió, y no creo que pueda jamás soltarlo.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No, Claire, estás muy equivocada. Crees que nunca podré perdonarte, pero yo no te culpo de nada. Lo que ocurrió fue una tragedia.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Y tragedias ocurren todos los días.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Exacto Miles. Y desde tu muerte creí firmemente que el mundo necesitaba una super heroína para evitarlas. Pero el mal sigue ahí fuera.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Claro que sí, y siempre estará ahí. Pero ahora tiene alguien que le hace frente.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Escúchame Claire, jamás podrás salvar a todo el mundo. Nadie puede. Pero si coges lo que está en tu mano y actúas, puede que salves hoy al Miles de alguna Claire.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"...",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Y eso, a pesar de que en otro lugar Miles muera, ya es una batalla ganada.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Claire?",
+                            "transmitter":1,
+                            "delayBefore":1.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Había olvidado lo bien que se te daban los discursos emotivos.",
+                            "transmitter":0,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Oh, venga ya!",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"De verdad Miles… no entiendo cómo es posible que estés aquí, ni cómo has llegado. Pero gracias. A ti y a lo que sea que te haya traído.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No tienes que dármelas. Sólo prométeme que acabarás con esa cosa.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Te lo prometo.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No puedes verlo, porque no tengo boca. Pero estoy sonriendo.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Qué tonto eres!",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Haha",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Supongo que cuando atraviese esa puerta, no volveré a verte.",
+                            "transmitter":0,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"No se muy bien como funciona esto de ser una mano fantasmal pero… yo también lo temo.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Oh no! ¡Se me olvidaba! Llevo semanas aquí dentro y cerré con llave, porque no pretendía salir dentro de poco.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Bueno, puedes volar, ¿no? ¿Por qué no sales por la ventana?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Oh no no no, si dejo la ventana abierta para volver a entrar, podrían robarme. Es un barrio muy conflictivo.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Bueno… entonces puedo ayudarte a encontrar esa llave.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Eso me parecería genial!",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Tienes alguna idea de por dónde la podías haber dejado?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Ni lo más mínimo.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Vale… pues deberíamos darnos prisa antes de que ese calamar gigante acabe con todo.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 1,
+                    "sentences":[
+                        {
+                            "text":"Nada…",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Oye, recuerdas Bill and Sons? La heladería a la que solíamos ir de pequeños.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Si! Me encantaba el helado de pistacho.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Pues ahora tiene tiendas por todo el país. Alucinarías si la vieras ahora.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Vaya! Ahora mucha más gente puede disfrutar de la magia de Bill.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Eso ha sonado fatal.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Vaya que si.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 2,
+                    "sentences":[
+                        {
+                            "text":"Aquí tampoco…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Por cierto, siempre me quedó una duda contigo… Abbey te molaba, ¿verdad?",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Cómo lo sabía! Te crees que porque ahora soy un fantasma voy a decírtelo como un regalo desde el más allá, ¿no?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Y bien?",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Pues no! Te quedarás para siempre con la duda.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Sabía que dirías eso, pero tenía que intentarlo.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 3,
+                    "sentences":[
+                        {
+                            "text":"Aquí no parece haber ninguna llave… Pero sí un montón de cosas que no deberían estar ahí.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Cosas que no deberían estar ahí…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Son cosas que debes adivinar para mi!",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Me encantaba ese juego que nos inventamos.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Recuerdas aquella vez que, desesperado por no adivinar la solución, grité a grito pelado: ¡la vieja de la ropa sospechosamente antigua!",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Hahaha! Y luego estuviste dos semanas sintiéndote mal por la cara que puso mientras huía sin entender nada.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Si… creo que aún me siento un poco mal.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 4,
+                    "sentences":[
+                        {
+                            "text":"Nada de nada…",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Oye… Tengo que contarte algo.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Si…?",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Algo que nunca me atreví a confesar.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Miles...",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Recuerdas aquella vez que me quedé cuidando a tu gato dos horas?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"A Bigotes, si.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Si, cuando se me perdió durante una de esas dos horas y la otra la dediqué para encontrarlo.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Volvió con más polvo y ramas rotas que pelo, si.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Vale... pues el gato que traje de vuelta… no era Bigotes.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿QUÉ?",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"...",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"...",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Es coña!",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Joder, por un momento me lo había creido!",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Podría haberme dedicado a ser actor.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Estoy seguro de ello.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 5,
+                    "sentences":[
+                        {
+                            "text":"¡Eh! ¡Aquí hay una llave!",
+                            "transmitter":1,
+                            "delayBefore":1.0,
+                            "eventAfterText":"addStoreKey"
+                        },
+                        {
+                            "text":"¿Ah si?",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Oh, Claro! Es la llave de la despensa, seguro que dejé ahí la llave de la casa.",
+                            "transmitter":0,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿En la despensa?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Sí, allí estará.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":"activateStoreroom"
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 6,
+                    "sentences":[
+                        {
+                            "text":"Aquí sólo hay latas de atún y de frijoles. Muchas más de las que imaginaba que pudieran coger aquí… pero ninguna llave. ¿Estás segura de que…?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Miles",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¿Si?",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Es posible que tuviera las llaves en el bolsillo todo el tiempo.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":"keysInventory"
+                        },
+                        {
+                            "text":"¡Venga ya!",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Sólo quería pasar un poco más de tiempo contigo.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Claire…",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Te voy a echar mucho de menos, Miles.",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Y yo a ti, Claire.",
+                            "transmitter":1,
+                            "delayBefore":0.5,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"¡Venga, vamos! No pierdas más tiempo. ¡El mundo no se va a salvar solo!",
+                            "transmitter":1,
+                            "delayBefore":1.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"De eso va todo esto, ¿no?",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":"activateDoor"
+                        }
+                    ]
+                },
+                {
+                    "idDialogue": 7,
+                    "sentences":[
+                        {
+                            "text":"Adiós",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Adiós, Claire. Y hazme un favor.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"NO TENGAS NI UN POCO DE PIEDAD CON ESA COSA.",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Dalo por seguro, Miles",
+                            "transmitter":0,
+                            "delayBefore":0.0,
+                            "eventAfterText":"openDoor"
+                        },
+                        {
+                            "text":"¡Espera!¡Te has dejado aquí tu traje!",
+                            "transmitter":1,
+                            "delayBefore":2.0,
+                            "eventAfterText":""
+                        },
+                        {
+                            "text":"Bueno, supongo que no es tan importante...",
+                            "transmitter":1,
+                            "delayBefore":0.0,
+                            "eventAfterText":""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
