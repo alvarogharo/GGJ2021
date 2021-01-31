@@ -7,15 +7,18 @@ public class CinematicsController : MonoBehaviour
     public int currentAnimation;
     private Animator[] cinematicsAnimator;
 
-    void Start()
+    void Awake()
     {
         cinematicsAnimator = gameObject.GetComponentsInChildren<Animator>();
         currentAnimation = 0;
     }
 
+    private void Update() {
+        transform.position = Camera.main.transform.position;
+    }
+
     public void PlayCurrentAnimationAndUpdateState()
     {
-        transform.position = Camera.main.transform.position;
         if (currentAnimation < cinematicsAnimator.Length)
         {
             cinematicsAnimator[currentAnimation].SetTrigger("Play");
