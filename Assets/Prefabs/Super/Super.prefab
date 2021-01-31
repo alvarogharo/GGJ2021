@@ -46,7 +46,7 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0, g: 0.11986828, b: 1, a: 1}
+  m_Color: {r: 0.76161444, g: 0.95320064, b: 0.990566, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -69,10 +69,10 @@ MonoBehaviour:
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -0.32938242, y: 0.013546467, z: 0}
-  - {x: 0.25005007, y: 0.027889252, z: 0}
-  - {x: 0.38913822, y: 2.2689853, z: 0}
-  - {x: -0.10888648, y: 2.7439752, z: 0}
-  - {x: -0.33382225, y: 2.2795708, z: 0}
+  - {x: 0.38500166, y: 0.027889252, z: 0}
+  - {x: 0.6084347, y: 1.0881587, z: 0}
+  - {x: -0.024541855, y: 2.0186107, z: 0}
+  - {x: -0.6880708, y: 1.0987444, z: 0}
 --- !u!1 &8287538399704622350
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 1734313468}
   - component: {fileID: 1734313470}
   - component: {fileID: 1630978389}
-  - component: {fileID: 6130803519101541775}
   m_Layer: 0
   m_Name: Super
   m_TagString: Untagged
@@ -241,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7fadf80c41facf49ac5ea675d563fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 10
   pointTrailPrefab: {fileID: 4143624832115105660, guid: 4bdf0e5829b149f49976f64d42f15277,
     type: 3}
   moving: 0
@@ -400,7 +399,7 @@ MonoBehaviour:
               m_BoolArgument: 0
             m_CallState: 2
     repeatedActionDialogueIndex: []
-  isInteractable: 1
+  isInteractable: 0
   interactImmediatly: 1
   hasOutline: 0
 --- !u!114 &1630978389
@@ -438,43 +437,7 @@ MonoBehaviour:
   - {x: -0.26199758, y: 0.72023565, z: 0}
   m_ShapePathHash: 1404944205
   m_Mesh: {fileID: 0}
-  m_InstanceId: -43298
---- !u!114 &6130803519101541775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8287538399704622350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000cd7874d72de33135659e861a7dcddde7
-  m_ShapePath:
-  - {x: -0.19822645, y: -0.0010145903, z: 0}
-  - {x: 0.17125058, y: -0.0056453943, z: 0}
-  - {x: 0.2634529, y: 0.9730026, z: 0}
-  - {x: 0.30556762, y: 1.352509, z: 0}
-  - {x: 0.5044986, y: 1.7233995, z: 0}
-  - {x: 0.33552396, y: 2.1982143, z: 0}
-  - {x: 0.1127888, y: 2.3553786, z: 0}
-  - {x: 0.082868695, y: 2.7019339, z: 0}
-  - {x: -0.18474507, y: 2.7042298, z: 0}
-  - {x: -0.21195376, y: 2.3044643, z: 0}
-  - {x: -0.35430086, y: 2.0128884, z: 0}
-  - {x: -0.5293311, y: 1.6216443, z: 0}
-  - {x: -0.33511925, y: 1.3053005, z: 0}
-  - {x: -0.26199758, y: 0.72023565, z: 0}
-  m_ShapePathHash: 1404944205
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 16842
+  m_InstanceId: 93326
 --- !u!1001 &1883492854
 PrefabInstance:
   m_ObjectHideFlags: 0

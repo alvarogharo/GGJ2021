@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: 1272d6405fa1e3740a60cfb89771302c
-  - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 0b312b7e4b90abf48aaa0a17cf970f57
+    path: Assets/Scenes/Final Ivan.unity
+    guid: a1dea44ca810e4145baf530904aa1840
   m_configObjects: {}

@@ -104,7 +104,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 583db57eb31993c4b992fa0f13152214, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -240,4 +240,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e5901f67e61814cb7cc00ed8c75d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionPin: {fileID: 0}
+  positionPin: {fileID: 5582407387560453006, guid: 6b5d9d6964a62cf4d90c238f03ece7df,
+    type: 3}
