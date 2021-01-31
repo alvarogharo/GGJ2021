@@ -7,16 +7,39 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1623145949, guid: 3dd43506fd48646419d3ef2cbd7457b3, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623145949, guid: 3dd43506fd48646419d3ef2cbd7457b3, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 694045095068117891, guid: 3dd43506fd48646419d3ef2cbd7457b3,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 694045095068117891, guid: 3dd43506fd48646419d3ef2cbd7457b3,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.3125
+      objectReference: {fileID: 0}
     - target: {fileID: 694045095068117891, guid: 3dd43506fd48646419d3ef2cbd7457b3,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1546319696498959925, guid: 4068557940ceb2945bc037aca0c8071d,
+      objectReference: {fileID: -895491305850551597, guid: 262182a171297e149a3cfe2d9c9276a9,
         type: 3}
+    - target: {fileID: 694045095068117891, guid: 3dd43506fd48646419d3ef2cbd7457b3,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7598776732181658496, guid: 3dd43506fd48646419d3ef2cbd7457b3,
         type: 3}
       propertyPath: m_Name
-      value: PosterGinGenie
+      value: PosterGinGenie Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8926209662398456716, guid: 3dd43506fd48646419d3ef2cbd7457b3,
         type: 3}
