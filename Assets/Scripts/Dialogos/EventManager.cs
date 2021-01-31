@@ -36,9 +36,11 @@ public class EventManager : MonoBehaviour
                 //FindObjectOfType<CharacterMovement>().ShowExclamation();
                 break;
             case "softShake":
+                FindObjectOfType<CameraShakeController>().StopVibrations();
                 FindObjectOfType<CameraShakeController>().Shake(0.5f, 1.5f, 0.1f, 5);
                 break;
             case "hardShake":
+                FindObjectOfType<CameraShakeController>().StopVibrations();
                 FindObjectOfType<CameraShakeController>().Shake(1f, 2f, 0.1f, 5);
                 break;
             case "addStoreKey":

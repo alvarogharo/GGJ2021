@@ -1514,6 +1514,8 @@ MonoBehaviour:
   speed: 0.2
   leftLimit: -10
   rightLimit: 10
+  marginFromCenter: 3
+  speedRelocate: 1.5
 --- !u!114 &585126323
 MonoBehaviour:
   m_ObjectHideFlags: 0

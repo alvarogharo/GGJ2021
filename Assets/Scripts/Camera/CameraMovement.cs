@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    [Header("Standard parameters")]
     [SerializeField]
     [Tooltip ("Speed the camera will move")]
     private float speed = 0.05f;
@@ -15,6 +16,18 @@ public class CameraMovement : MonoBehaviour
     [Tooltip ("The right limit in the X Axis")]
     private float rightLimit;
     private bool controlEnabled;
+
+    private Transform playerTransform;
+
+    [Header("Dialogue parameters")]
+    [SerializeField]
+    private float marginFromCenter = 3;
+    [SerializeField]
+    private float speedRelocate = 1.5f;
+
+    private void Awake() {
+        playerTransform = FindObjectOfType<CharacterMovement>().transform;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +49,14 @@ public class CameraMovement : MonoBehaviour
                 if(this.transform.position.x > rightLimit){
                     this.transform.position = new Vector3 (rightLimit, this.transform.position.y, this.transform.position.z);
                 }
+            }
+        }else{
+            bool placed = false;
+            if(playerTransform.position.x > transform.position.x - marginFromCenter && playerTransform.position.x < transform.position.x + marginFromCenter){
+                placed = true;
+            }
+            if(!placed){
+                transform.position = Vector3.Lerp (transform.position, new Vector3 (playerTransform.position.x, transform.position.y, transform.position.z), Time.deltaTime * speedRelocate);
             }
         }
     }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.IO;
 using System;
@@ -27,11 +28,17 @@ public class DialogueManager : MonoBehaviour
     private CameraMovement cameraMovement;
     private BlackBarsController blackBarsController;
 
+    //Transforms
+    private Transform superTransform;
+    private Transform handTransform;
+
     
     private void Awake(){
         superMovement = FindObjectOfType<CharacterMovement>();
         cameraMovement = FindObjectOfType<CameraMovement>();
         blackBarsController = FindObjectOfType<BlackBarsController>();
+        superTransform = superDialogueText.transform.parent.parent.parent.parent;
+        handTransform = handDialogueText.transform.parent.parent.parent.parent;
     }
     private void Start(){
         typing = false;
@@ -59,6 +66,35 @@ public class DialogueManager : MonoBehaviour
                     }
                     NextSentence();
             }
+        }
+
+        //Super text at left
+        if(superTransform.position.x > Camera.main.transform.position.x){
+            superDialogueText.transform.parent.parent.GetComponent<VerticalLayoutGroup>().childAlignment = TextAnchor.UpperRight;
+            Vector3 pos = superDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition;
+            pos.x = -2.5f;
+            superDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition = pos;
+        }
+        //Super text at right
+        if(superTransform.position.x < Camera.main.transform.position.x){
+            superDialogueText.transform.parent.parent.GetComponent<VerticalLayoutGroup>().childAlignment = TextAnchor.UpperLeft;
+            Vector3 pos = superDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition;
+            pos.x = 2.5f;
+            superDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition = pos;
+        }
+        //Hand text at left
+        if(handTransform.position.x > Camera.main.transform.position.x){
+            handDialogueText.transform.parent.parent.GetComponent<VerticalLayoutGroup>().childAlignment = TextAnchor.UpperRight;
+            Vector3 pos = handDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition;
+            pos.x = -2.5f;
+            handDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition = pos;
+        }
+        //Hand text at right
+        if(handTransform.position.x < Camera.main.transform.position.x){
+            handDialogueText.transform.parent.parent.GetComponent<VerticalLayoutGroup>().childAlignment = TextAnchor.UpperLeft;
+            Vector3 pos = handDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition;
+            pos.x = 3.25f;
+            handDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition = pos;
         }
     }
 
