@@ -19,6 +19,8 @@ public class FinishCinematicController : MonoBehaviour
                 FindObjectOfType<CharacterMovement>().EnableControl();
                 FindObjectOfType<CameraMovement>().EnableControl();
                 FindObjectOfType<IntratableFasesController>().EnableFase(1);
+                FindObjectOfType<CameraShakeController>().StopVibrations();
+                FindObjectOfType<CameraShakeController>().StartLightConstantVibration();
                 //Camera Shake intervalos
                 break;
             case 2:
@@ -27,6 +29,7 @@ public class FinishCinematicController : MonoBehaviour
                 FindObjectOfType<CharacterMovement>().EnableControl();
                 FindObjectOfType<CameraMovement>().EnableControl();
                 FindObjectOfType<IntratableFasesController>().EnableFase(2);
+                FindObjectOfType<CameraShakeController>().StartHardConstantVibration();
                 FindObjectOfType<DialogueManager>().StartDialogue(2,0);
                 break;
             case 3:

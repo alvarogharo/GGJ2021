@@ -127,7 +127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 69
+        y: 37
         width: 123
         height: 79
       alignment: 0
@@ -147,10 +147,10 @@ TextureImporter:
       name: bedroom_1
       rect:
         serializedVersion: 2
-        x: 140
-        y: 86
-        width: 32
-        height: 53
+        x: 130
+        y: 67
+        width: 76
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: bedroom_2
       rect:
         serializedVersion: 2
-        x: 201
-        y: 86
-        width: 35
-        height: 65
+        x: 218
+        y: 68
+        width: 33
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +189,10 @@ TextureImporter:
       name: bedroom_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 38
-        width: 78
-        height: 16
+        x: 2
+        y: 5
+        width: 15
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +210,10 @@ TextureImporter:
       name: bedroom_4
       rect:
         serializedVersion: 2
-        x: 82
-        y: 37
-        width: 15
-        height: 21
+        x: 46
+        y: 6
+        width: 12
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: bedroom_5
       rect:
         serializedVersion: 2
-        x: 130
-        y: 19
-        width: 76
-        height: 57
+        x: 208
+        y: 21
+        width: 17
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: bedroom_6
       rect:
         serializedVersion: 2
-        x: 208
-        y: 37
-        width: 17
-        height: 29
+        x: 129
+        y: 38
+        width: 77
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,27 +265,6 @@ TextureImporter:
       bones: []
       spriteID: 64c7c12b7076c6440800000000000000
       internalID: 4930428974814493766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bedroom_7
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 6
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba26de7c235115f20800000000000000
-      internalID: 3409529700742947499
       vertices: []
       indices: 
       edges: []

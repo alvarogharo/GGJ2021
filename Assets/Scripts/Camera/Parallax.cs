@@ -20,14 +20,14 @@ public class Parallax : MonoBehaviour{
     private float D;
     
     void Start(){
-        realPosition = transform.position;
-        A = 0; B = 0; C = 0; D = 0;
+        //realPosition = transform.position;
+        //A = 0; B = 0; C = 0; D = 0;
     }
 
     void Update(){
-        float correctedX = calculateCorrectedX();
-        correctedPosition = new Vector3(correctedX, transform.position.y, transform.position.z);
-        transform.position = correctedPosition;
+        //float correctedX = calculateCorrectedX();
+        //correctedPosition = new Vector3(correctedX, transform.position.y, transform.position.z);
+        //transform.position = correctedPosition;
     }
 
     public float calculateCorrectedX(){
@@ -50,13 +50,13 @@ public class Parallax : MonoBehaviour{
 
         C = Mathf.Abs(camera.transform.position.z);
         D = C + transform.position.z;
-        B = realPosition.x - camera.transform.position.x;
+        B = camera.transform.position.x - realPosition.x ;
         sign = B > 0 ? 1 : -1; 
         B = Mathf.Abs(B);
 
         A = (B*C)/D;
 
-        float corX = (B - A) * sign;
+        float corX = Mathf.Sign(B-A) * sign * (B-A);
 
         corX = realPosition.x - corX;
 

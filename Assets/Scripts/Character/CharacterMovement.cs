@@ -18,6 +18,12 @@ public class CharacterMovement : MonoBehaviour
     private bool firstMovement = true;
     private bool secondMovement = true;
 
+    //References to components
+    private Animator anim;
+
+    private void Awake() {
+        anim = GetComponent<Animator>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +31,7 @@ public class CharacterMovement : MonoBehaviour
         controlEnabled = false;
         firstMovement = true;
         secondMovement = true;
+        StartCoroutine(ScratchLoop());
     }
 
     // Update is called once per frame
@@ -58,13 +65,14 @@ public class CharacterMovement : MonoBehaviour
             float distance = Vector3.Distance(this.transform.position, pointToGo);
             float multiplier = pointToGo.x > this.transform.position.x ? 1 : -1;
             if(distance > 0.1f){
-                 this.transform.position = this.transform.position + new Vector3(speed * multiplier, 0f, 0f);
+                 this.transform.position = this.transform.position + new Vector3(speed * multiplier, 0, 0);
             }else{
                 if(interactableObj != null){
                     interactableObj.Interact();
                     interactableObj = null;
                 }
                 moving = false;
+                anim.SetBool("Walking", false);
 
                 if(!firstMovement && secondMovement){
                     //#4 - Segundo clic frase cuando va allí
@@ -75,18 +83,29 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
+    IEnumerator ScratchLoop(){
+        while(true){
+            float seconds = Random.Range(10f, 20f);
+            yield return new WaitForSeconds(seconds);
+            anim.SetTrigger("Scratch");
+        }
+    }
+
     public void EnableControl(){controlEnabled = true;}
      public void DisableControl(bool stopNow = false){
         controlEnabled = false;
 
         if(stopNow){
             moving = false;
+            anim.SetBool("Walking", false);
         }
     }
     public void SetPointToGo(Vector3 point){
         if(controlEnabled){
             pointToGo = new Vector3(point.x, this.transform.position.y, this.transform.position.z);
+            GetComponent<SpriteRenderer>().flipX = transform.position.x > pointToGo.x;
             moving = true;
+            anim.SetBool("Walking", true);
         }
     }
 

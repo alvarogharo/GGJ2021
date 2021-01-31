@@ -1,7 +1,40 @@
 fileFormatVersion: 2
 guid: 2f8f13d7361fbce47b640a565c14f04f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6762806206646994688
+    second: kitchen_0
+  - first:
+      213: -51499525944834020
+    second: kitchen_1
+  - first:
+      213: 6751644692483293817
+    second: kitchen_4
+  - first:
+      213: 8549451902671798977
+    second: kitchen_9
+  - first:
+      213: -6854085019721290939
+    second: kitchen_10
+  - first:
+      213: -2756064812499679153
+    second: kitchen_11
+  - first:
+      213: -7741664878765573896
+    second: kitchen_12
+  - first:
+      213: -4319939253348954455
+    second: kitchen_13
+  - first:
+      213: -8154954287954580813
+    second: kitchen_14
+  - first:
+      213: -4062533243601202018
+    second: kitchen_15
+  - first:
+      213: -6999990618818916337
+    second: kitchen_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +130,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: kitchen_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 69
+        width: 153
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009bffff59fa522a0800000000000000
+      internalID: -6762806206646994688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 127
+        width: 113
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1805f93479094ff0800000000000000
+      internalID: -51499525944834020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_4
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 134
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9724e197319a2bd50800000000000000
+      internalID: 6751644692483293817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_9
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 132
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c24a036531c5a670800000000000000
+      internalID: 8549451902671798977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_10
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 81
+        width: 142
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54baf233df561e0a0800000000000000
+      internalID: -6854085019721290939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_11
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 6
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48c001c7ad70c9d0800000000000000
+      internalID: -2756064812499679153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_12
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 38
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f87f035fc4109490800000000000000
+      internalID: -7741664878765573896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_13
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 54
+        width: 66
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae8ed8132e7c04c0800000000000000
+      internalID: -4319939253348954455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_14
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 54
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba2bea2848c3de80800000000000000
+      internalID: -8154954287954580813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_16
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 56
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f005b36ae990bde90800000000000000
+      internalID: -6999990618818916337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

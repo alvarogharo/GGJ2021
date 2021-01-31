@@ -62,6 +62,8 @@ public class InteractableObjectController : MonoBehaviour
         {
             if(interactImmediatly){
                 Interact();
+                isInteractable = false;
+                outlineLight.enabled = false;;
             }else{
                 FindObjectOfType<CharacterMovement>().SetObject(this);
             }
