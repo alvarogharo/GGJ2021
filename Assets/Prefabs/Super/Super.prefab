@@ -479,7 +479,7 @@ PrefabInstance:
     - target: {fileID: 6652879277109378878, guid: 777966f5ee9339e4d939bf46c4233df6,
         type: 3}
       propertyPath: m_Name
-      value: SpeechCanvas
+      value: SuperSpeechCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 7004673314812542733, guid: 777966f5ee9339e4d939bf46c4233df6,
         type: 3}
