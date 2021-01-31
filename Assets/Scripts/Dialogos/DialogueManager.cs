@@ -83,10 +83,10 @@ public class DialogueManager : MonoBehaviour
             superDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition = pos;
         }
         //Hand text at left
-        if(handTransform.position.x > Camera.main.transform.position.x){
+        /*if(handTransform.position.x > Camera.main.transform.position.x){
             handDialogueText.transform.parent.parent.GetComponent<VerticalLayoutGroup>().childAlignment = TextAnchor.UpperRight;
-            Vector3 pos = handDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition;
-            pos.x = -2.5f;
+            /*Vector3 pos = handDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition;
+            pos.x = 0.15f;
             handDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition = pos;
         }
         //Hand text at right
@@ -95,7 +95,7 @@ public class DialogueManager : MonoBehaviour
             Vector3 pos = handDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition;
             pos.x = 3.25f;
             handDialogueText.transform.parent.parent.parent.GetComponent<RectTransform>().localPosition = pos;
-        }
+        }*/
     }
 
     public void EnableControl(){controlEnabled = true;}

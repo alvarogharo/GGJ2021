@@ -103,7 +103,7 @@ public class CharacterMovement : MonoBehaviour
     public void SetPointToGo(Vector3 point){
         if(controlEnabled){
             pointToGo = new Vector3(point.x, this.transform.position.y, this.transform.position.z);
-            GetComponent<SpriteRenderer>().flipX = transform.position.x > pointToGo.x;
+            GetComponent<SpriteRenderer>().flipX = transform.position.x < pointToGo.x;
             moving = true;
             anim.SetBool("Walking", true);
         }
