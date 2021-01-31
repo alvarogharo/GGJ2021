@@ -1582,7 +1582,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
-  - time: 0.6333333
+  - time: 0.55
     functionName: StartSound
     data: 
     objectReferenceParameter: {fileID: 0}

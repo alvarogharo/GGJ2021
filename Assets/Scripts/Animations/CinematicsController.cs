@@ -14,7 +14,7 @@ public class CinematicsController : MonoBehaviour
     }
 
     private void Update() {
-        transform.position = Camera.main.transform.position;
+        transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
     }
 
     public void PlayCurrentAnimationAndUpdateState()
