@@ -6,6 +6,7 @@ using UnityEngine;
 public class CursorController : MonoBehaviour
 {
     public float cursorChangeOffSet;
+    public float moveSpeed;
 
     private Animator cursorAnimator;
     private SpriteRenderer sprRenderer;
@@ -13,31 +14,22 @@ public class CursorController : MonoBehaviour
     private Vector3 mousePos;
     private Vector3 prevMousePos;
 
-    // Start is called before the first frame update
     void Awake()
     {
         cursorAnimator = gameObject.GetComponent<Animator>();
         sprRenderer = gameObject.GetComponent<SpriteRenderer>();
         audioSrc = gameObject.GetComponent<AudioSource>();
+        Cursor.visible = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Cursor.visible = false;
-        mousePos = Input.mousePosition;
-        Vector3 mouseMotion = prevMousePos - mousePos;
 
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(worldPosition.x, worldPosition.y, -7);
+        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // transform.position = new Vector3(mouseWorldPosition.x, mouseWorldPosition.y, -7);
 
-        if (mouseMotion.x > cursorChangeOffSet)
-        {
-            cursorAnimator.SetBool("isGoingLeft", true);
-        } else if (mouseMotion.y < -cursorChangeOffSet)
-        {
-            cursorAnimator.SetBool("isGoingLeft", false);
-        }
+        transform.position = Vector2.Lerp(transform.position, mouseWorldPosition, moveSpeed * Time.deltaTime);
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -47,8 +39,20 @@ public class CursorController : MonoBehaviour
                 audioSrc.Play(0);
             }
         }
+    }
 
-        prevMousePos = mousePos;
+    void FixedUpdate()
+    {
+        setAnimationState();
+    }
+
+    private void setAnimationState() {
+        if(Input.GetAxis("Mouse X") < 0) {
+            cursorAnimator.SetBool("isGoingLeft", true);
+        }
+        if(Input.GetAxis("Mouse X") > 0) {
+            cursorAnimator.SetBool("isGoingLeft", false);
+        }
     }
 
     public void ShowCursor()
@@ -59,6 +63,10 @@ public class CursorController : MonoBehaviour
     public void HideCursor()
     {
         sprRenderer.enabled = false;
+    }
+
+    public void ClickAnimationEnded() {
+        Debug.Log("Terminó");
     }
 
 }
