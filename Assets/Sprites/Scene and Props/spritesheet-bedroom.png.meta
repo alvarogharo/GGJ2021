@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 76af260b612786c4cb98ffe543e35228
+guid: 876d28b5ce029e74f82a009fdf825dcd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7660526442598738331
-    second: outside window_back
+      213: -502161691872580551
+    second: bedroom_wall
   - first:
-      213: -1829757772053758930
-    second: outside window_smol_cthulhu
+      213: -8278957401853422152
+    second: bathroom_wall
   - first:
-      213: 2114193967009300197
-    second: outside window_mid
+      213: 6019404152094430537
+    second: bedroom_closet_wall
   - first:
-      213: 1887532429632299847
-    second: outside window_fore
+      213: 4232087262298902048
+    second: bedroom_table
+  - first:
+      213: -1219174792544275921
+    second: bathroom_sink
+  - first:
+      213: 459835049567667515
+    second: bedroom_bed
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,85 +117,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: outside window_back
+      name: bedroom_wall
       rect:
         serializedVersion: 2
-        x: 9
-        y: 195
-        width: 178
-        height: 53
+        x: 5
+        y: 37
+        width: 123
+        height: 79
       alignment: 9
-      pivot: {x: 0.5, y: 0.509434}
+      pivot: {x: 0.49593493, y: 0.4936709}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b99a59b5638af4a60800000000000000
-      internalID: 7660526442598738331
+      spriteID: 93c20201a96f709f0800000000000000
+      internalID: -502161691872580551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: outside window_smol_cthulhu
+      name: bathroom_wall
       rect:
         serializedVersion: 2
-        x: 75
-        y: 137
-        width: 24
-        height: 26
-      alignment: 0
+        x: 133
+        y: 67
+        width: 73
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5068493, y: 0.49122807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b59fe75b1c3b1d80800000000000000
+      internalID: -8278957401853422152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom_closet_wall
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 68
+        width: 33
+        height: 53
+      alignment: 9
+      pivot: {x: 0.4848485, y: 0.49056605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94599152f28398350800000000000000
+      internalID: 6019404152094430537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bedroom_table
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 6
+        width: 12
+        height: 18
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2cb9b330056b96e0800000000000000
-      internalID: -1829757772053758930
+      spriteID: 02e08c741f46bba30800000000000000
+      internalID: 4232087262298902048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: outside window_mid
+      name: bathroom_sink
       rect:
         serializedVersion: 2
-        x: 15
-        y: 67
-        width: 163
-        height: 31
+        x: 208
+        y: 21
+        width: 17
+        height: 29
       alignment: 9
-      pivot: {x: 0.5030675, y: 0.516129}
+      pivot: {x: 0.47058824, y: 0.51724136}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eefcd52630275d10800000000000000
-      internalID: 2114193967009300197
+      spriteID: f22b9435cfe941fe0800000000000000
+      internalID: -1219174792544275921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: outside window_fore
+      name: bedroom_bed
       rect:
         serializedVersion: 2
-        x: 34
-        y: 2
-        width: 119
-        height: 33
+        x: 129
+        y: 38
+        width: 77
+        height: 15
       alignment: 9
-      pivot: {x: 0.5042017, y: 0.4848485}
+      pivot: {x: 0.4935065, y: 0.53333336}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74363428ebcd13a10800000000000000
-      internalID: 1887532429632299847
+      spriteID: b3541c09a89a16600800000000000000
+      internalID: 459835049567667515
       vertices: []
       indices: 
       edges: []
