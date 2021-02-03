@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 76af260b612786c4cb98ffe543e35228
+guid: d05288147ec5d4b4da433baaace72417
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7660526442598738331
-    second: outside window_back
+      213: 7429681782797229408
+    second: living_room_wall
   - first:
-      213: -1829757772053758930
-    second: outside window_smol_cthulhu
+      213: 1345982979056724278
+    second: living_room_worktable
   - first:
-      213: 2114193967009300197
-    second: outside window_mid
+      213: -4278765598481084185
+    second: living_room_shelves
   - first:
-      213: 1887532429632299847
-    second: outside window_fore
+      213: 3609297026875104764
+    second: living_room_sofa_table
+  - first:
+      213: -7470656395493392915
+    second: living_room_sofa
+  - first:
+      213: 5486769279654972307
+    second: living_room_chair
+  - first:
+      213: -5270011127051014374
+    second: living_room_dead_plant
+  - first:
+      213: 6453876473646919901
+    second: living_room_hanging_plant
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,34 +123,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: outside window_back
+      name: living_room_wall
       rect:
         serializedVersion: 2
-        x: 9
-        y: 195
-        width: 178
-        height: 53
+        x: 0
+        y: 21
+        width: 181
+        height: 79
       alignment: 9
-      pivot: {x: 0.5, y: 0.509434}
+      pivot: {x: 0.50276244, y: 0.5063291}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b99a59b5638af4a60800000000000000
-      internalID: 7660526442598738331
+      spriteID: 06dd1d1a7388b1760800000000000000
+      internalID: 7429681782797229408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: outside window_smol_cthulhu
+      name: living_room_worktable
       rect:
         serializedVersion: 2
-        x: 75
-        y: 137
-        width: 24
-        height: 26
+        x: 212
+        y: 54
+        width: 38
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,50 +158,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2cb9b330056b96e0800000000000000
-      internalID: -1829757772053758930
+      spriteID: 639e56c5364eda210800000000000000
+      internalID: 1345982979056724278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: outside window_mid
+      name: living_room_shelves
       rect:
         serializedVersion: 2
-        x: 15
-        y: 67
-        width: 163
+        x: 250
+        y: 54
+        width: 26
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e09f59ab55ce94c0800000000000000
+      internalID: -4278765598481084185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: living_room_sofa_table
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 54
+        width: 15
+        height: 13
+      alignment: 9
+      pivot: {x: 0.53333336, y: 0.53846157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd93c7e58cc61230800000000000000
+      internalID: 3609297026875104764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: living_room_sofa
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 22
+        width: 76
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5217391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedbd9be695e25890800000000000000
+      internalID: -7470656395493392915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: living_room_chair
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 6
+        width: 19
         height: 31
       alignment: 9
-      pivot: {x: 0.5030675, y: 0.516129}
+      pivot: {x: 0.5263158, y: 0.516129}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eefcd52630275d10800000000000000
-      internalID: 2114193967009300197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: outside window_fore
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 2
-        width: 119
-        height: 33
-      alignment: 9
-      pivot: {x: 0.5042017, y: 0.4848485}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74363428ebcd13a10800000000000000
-      internalID: 1887532429632299847
+      spriteID: 39b4c56f69be42c40800000000000000
+      internalID: 5486769279654972307
       vertices: []
       indices: 
       edges: []
