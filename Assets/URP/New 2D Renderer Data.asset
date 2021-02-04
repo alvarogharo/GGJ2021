@@ -27,7 +27,7 @@ MonoBehaviour:
       multiplicative: 0
       additive: 0
   - enabled: 0
-    name: Blend Style 1
+    name: Additive
     maskTextureChannel: 0
     renderTextureScale: 1
     blendMode: 1
@@ -35,15 +35,15 @@ MonoBehaviour:
       multiplicative: 0
       additive: 0
   - enabled: 0
-    name: Blend Style 2
+    name: Substractive
     maskTextureChannel: 0
     renderTextureScale: 1
-    blendMode: 1
+    blendMode: 2
     customBlendFactors:
       multiplicative: 0
       additive: 0
   - enabled: 0
-    name: Blend Style 3
+    name: Just like Default
     maskTextureChannel: 0
     renderTextureScale: 1
     blendMode: 1

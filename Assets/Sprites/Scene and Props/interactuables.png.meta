@@ -55,7 +55,7 @@ TextureImporter:
     second: interactuables_window
   - first:
       213: -9100536818856314466
-    second: interactuables_achiver
+    second: interactuables_archiver
   - first:
       213: -39997847135690183
     second: interactuables_cupboard
@@ -519,7 +519,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: interactuables_achiver
+      name: interactuables_archiver
       rect:
         serializedVersion: 2
         x: 260
