@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485331170}
   - component: {fileID: 1485331169}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Freeform Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485331168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4, y: -0.16, z: 0}
+  m_LocalPosition: {x: 2.04, y: -0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5023646497432594880}
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.21982914, g: 0.21984005, b: 0.7169812, a: 1}
+  m_Color: {r: 0.76161444, g: 0.95320064, b: 0.990566, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 303623764}
   - component: {fileID: 303623763}
   - component: {fileID: 8534072891847436079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SuperSuit
   m_TagString: InteractableObj
   m_Icon: {fileID: 0}
@@ -153,13 +153,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4637467933121595458, guid: 262182a171297e149a3cfe2d9c9276a9,
+  m_Sprite: {fileID: -8415887682650881086, guid: 262182a171297e149a3cfe2d9c9276a9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 18.85, y: 18.65}
+  m_Size: {x: 1.5625, y: 2.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -181,9 +181,9 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.8125, y: 2.625}
-    newSize: {x: 18.85, y: 18.65}
+    pivot: {x: 0.48, y: 0.52380955}
+    oldSize: {x: 1.5625, y: 2.625}
+    newSize: {x: 1.5625, y: 2.625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -223,7 +223,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5c30efdd8c9484e82350974933937e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phaseActions: []
+  phaseActions:
+  - phaseIndex: 1
+    singleActionDialogueIndex:
+    - dialogueIndex: 0
+      dialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - dialogueIndex: 1
+      dialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - dialogueIndex: 2
+      dialogueEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    repeatedActionDialogueIndex: []
   isInteractable: 0
   interactImmediatly: 0
   hasOutline: 0
@@ -239,7 +254,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b3a429afa8abbb84a9b38fc779abc986, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.365
   m_Pitch: 1
   Loop: 0
   Mute: 0
