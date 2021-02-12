@@ -120,12 +120,12 @@ TextureImporter:
       name: bedroom_wall
       rect:
         serializedVersion: 2
-        x: 5
-        y: 37
-        width: 123
-        height: 79
+        x: 8
+        y: 22
+        width: 121
+        height: 78
       alignment: 9
-      pivot: {x: 0.49593493, y: 0.4936709}
+      pivot: {x: 0.48760328, y: 0.4871795}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,8 +141,8 @@ TextureImporter:
       name: bathroom_wall
       rect:
         serializedVersion: 2
-        x: 133
-        y: 67
+        x: 149
+        y: 51
         width: 73
         height: 57
       alignment: 9
@@ -162,8 +162,8 @@ TextureImporter:
       name: bedroom_closet_wall
       rect:
         serializedVersion: 2
-        x: 218
-        y: 68
+        x: 234
+        y: 52
         width: 33
         height: 53
       alignment: 9
@@ -183,8 +183,8 @@ TextureImporter:
       name: bedroom_table
       rect:
         serializedVersion: 2
-        x: 14
-        y: 6
+        x: 270
+        y: 22
         width: 12
         height: 18
       alignment: 9
@@ -204,8 +204,8 @@ TextureImporter:
       name: bathroom_sink
       rect:
         serializedVersion: 2
-        x: 208
-        y: 21
+        x: 224
+        y: 5
         width: 17
         height: 29
       alignment: 9
@@ -225,8 +225,8 @@ TextureImporter:
       name: bedroom_bed
       rect:
         serializedVersion: 2
-        x: 129
-        y: 38
+        x: 145
+        y: 22
         width: 77
         height: 15
       alignment: 9
